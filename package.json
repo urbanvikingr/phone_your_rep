@@ -1,0 +1,26 @@
+{
+  "name": "phone-your-rep-web",
+  "version": "0.1.0",
+  "description": "front-end for the phone-your-rep application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylebutts/phone_your_rep.git"
+  },
+  "author": "Kyle Butts",
+  "contributors": [
+    { "name" : "Kyle Butts" },
+    { "name" : "Nicolas Moise",
+      "email" : "nicolasmoise@gmail.com",
+      "url" : "https://github.com/nicolasmoise/"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylebutts/phone_your_rep/issues"
+  },
+  "homepage": "https://github.com/kylebutts/phone_your_rep#readme"
+}
