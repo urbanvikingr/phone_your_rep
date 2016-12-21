@@ -61,7 +61,6 @@ const Card = React.createClass({
 						</div>
 						<div className="panel-body">
 							<h3 className="text-center m-0"> {this.props.contact.name} </h3>
-							<p className="pull-right"> <i className="fa fa-phone" aria-hidden="true"></i> {this.props.contact.phone[0]} </p>
 
 						</div>
 					</div>
