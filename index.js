@@ -42,19 +42,20 @@ const Card = React.createClass({
 		this.setState({ animation: "card-animation-start", "hidden": ""});
 	},
 	render: function(){
+    var contact = this.props.contacts;
 		return (
+
 				<div className= {"col-md-6 col-md-offset-3 " + this.state.animation + " " + this.state.hidden}>
 					<div className="panel panel-primary">
 						<div className="panel-heading">
-							<p className="d-inline-block m-0">{this.props.office}</p>
-
-							<a className="pull-right card-link" href={this.props.url}><i className="fa fa-desktop fa-white" aria-hidden="true"></i></a>
-							<a className="pull-right card-link" href={this.props.youtube}><i className="fa fa-youtube-play fa-white" aria-hidden="true"></i></a>
-							<a className="pull-right card-link" href={this.props.twitter}><i className="fa fa-twitter fa-white" aria-hidden="true"></i></a>
-							<a className="pull-right card-link" href={this.props.facebook}><i className="fa fa-facebook-official fa-white" aria-hidden="true"></i></a>
+							<p className="d-inline-block m-0">{this.props.contact.office}</p>
+							<SocialLink type="web" link={this.props.contact.url}/>
+							<SocialLink type="youtube" link={this.props.contact.youtube}/>
+							<SocialLink type="twitter" link={this.props.contact.twitter}/>
+							<SocialLink type="facebook" link={this.props.contact.facebook}/>
 						</div>
 						<div className="panel-body">
-							<h3>{this.props.name}</h3>
+							<h3>{this.props.contact.name}</h3>
 						</div>
 					</div>
 				</div>
@@ -69,12 +70,7 @@ const CardList = React.createClass({
 					<Card
 						key={i}
 						wait={250*i}
-						name={contact.name}
-						office={contact.office}
-						url={contact.url}
-						twitter={"https://www.twitter.com/"+contact.twitter}
-						facebook={"https://www.facebook.com/"+contact.facebook}
-						youtube={"https://www.youtube.com/user/"+contact.youtube}
+            contact={contact}
 					/>
 			);
 		});
@@ -87,3 +83,43 @@ const CardList = React.createClass({
 		);
 	}
 });
+
+const networkMap = {
+	"youtube": {
+		className: 'fa-youtube-play',
+		baseUrl: 'https://www.youtube.com/user/'
+	},
+	"twitter": {
+		className: 'fa-twitter',
+		baseUrl: 'https://www.twitter.com/'
+	},
+	"facebook": {
+		className: 'fa-facebook',
+		baseUrl: 'https://www.facebook.com/'
+	},
+	"web": {
+		className: 'fa-desktop',
+		baseUrl: ''
+	}
+};
+
+const SocialLink = React.createClass({
+  render: function() {
+
+		function _socialLink(link, network) {;
+			var classes  = 'fa ' + network.className + ' fa-white';
+			var url = network.baseUrl + link
+			return (<a className="pull-right card-link" href={url}><i className={classes} aria-hidden="true"></i></a>);
+		}
+
+		if(this.props.link){
+			return _socialLink(this.props.link, networkMap[this.props.type]);
+		}
+
+		return null;
+  }
+});
+
+SocialLink.propTypes = {
+	type: React.PropTypes.oneOf(Object.keys(networkMap)).isRequired
+};
