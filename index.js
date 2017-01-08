@@ -9,7 +9,7 @@ function click(e){
 function getURL(address){
 	var request = new XMLHttpRequest();
 	console.log(address);
-	var url = "https://aqueous-anchorage-20771.herokuapp.com/reps?address={"+address+"}";
+	var url = "https://phone-your-rep.herokuapp.com/reps?address={"+address+"}";
 
 	request.open("GET", url);
 	request.addEventListener("load", onLoad);
