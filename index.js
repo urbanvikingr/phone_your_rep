@@ -19,7 +19,11 @@ function getURL(address){
 function onLoad(){
 	console.log("Success :)");
 	apiData = JSON.parse(this.response);
-	console.log(apiData);
+
+	// Fixes US House of Representatives STATE-District to US House
+	apiData.forEach((card) => {
+		if(card.office.substring(0, 19) == "United States House"){ card.office = "United States House";}
+	});
 	// Render Card List!
 	ReactDOM.render(
 	  	<CardList />,
@@ -42,7 +46,8 @@ const Card = React.createClass({
 		this.setState({ animation: "card-animation-start", "hidden": ""});
 	},
 	render: function(){
-    var contact = this.props.contacts;
+    	var contact = this.props.contacts;
+
 		return (
 
 				<div className= {"col-md-6 col-md-offset-3 " + this.state.animation + " " + this.state.hidden}>
@@ -55,7 +60,8 @@ const Card = React.createClass({
 							<SocialLink type="facebook" link={this.props.contact.facebook}/>
 						</div>
 						<div className="panel-body">
-							<h3>{this.props.contact.name}</h3>
+							<h3 className="text-center m-0"> {this.props.contact.name} </h3>
+
 						</div>
 					</div>
 				</div>
