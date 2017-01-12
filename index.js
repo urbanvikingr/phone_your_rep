@@ -6,14 +6,16 @@ function submit(e){
 	var address = document.getElementById('address').value;
 	var lat = document.getElementById('lat').value;
 	var lng = document.getElementById('lng').value;
-	getURL(address, lat, lng);
+	var state = document.getElementById('locality').value;
+	getURL(address, lat, lng, locality);
 }
-function getURL(address, lat, lng){
+function getURL(address, lat, lng, locality){
 	var request = new XMLHttpRequest();
 	console.log(address);
 	console.log(lat);
 	console.log(lng);
-	var url = "https://phone-your-rep.herokuapp.com/reps?address={"+address+"}";
+	console.log(locality);
+	var url = "https://phone-your-rep.herokuapp.com/reps?address={"+address"+}&lat={"+lat+"}&long={"+lng+"}&state={"+locality+"}";
 
 	request.open("GET", url);
 	request.addEventListener("load", onLoad);
