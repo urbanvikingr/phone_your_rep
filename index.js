@@ -22,7 +22,7 @@ function onLoad(){
 
 	// Fixes US House of Representatives STATE-District to US House
 	apiData.forEach((card) => {
-		if(card.office.substring(0, 19) == "United States House"){ card.office = "United States House";}
+		if(card.role.substring(0, 28) == "United States Representative"){ card.role = "United States House";}
 	});
 	// Render Card List!
 	ReactDOM.render(
@@ -53,14 +53,14 @@ const Card = React.createClass({
 				<div className= {"col-md-6 col-md-offset-3 " + this.state.animation + " " + this.state.hidden}>
 					<div className="panel panel-primary">
 						<div className="panel-heading">
-							<p className="d-inline-block m-0">{this.props.contact.office}</p>
+							<p className="d-inline-block m-0">{this.props.contact.role}</p>
 							<SocialLink type="web" link={this.props.contact.url}/>
 							<SocialLink type="youtube" link={this.props.contact.youtube}/>
 							<SocialLink type="twitter" link={this.props.contact.twitter}/>
 							<SocialLink type="facebook" link={this.props.contact.facebook}/>
 						</div>
 						<div className="panel-body">
-							<h3 className="text-center m-0"> {this.props.contact.name} </h3>
+							<h3 className="text-center m-0"> {this.props.contact.official_full} </h3>
 
 						</div>
 					</div>
