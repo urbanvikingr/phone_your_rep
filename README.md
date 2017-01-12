@@ -1,3 +1,3 @@
-To start: use "python -m SimpleHTTPServer"
+## To run:
 
-Go to "localhost:8000/" to start
+Clone this repo and run local server
