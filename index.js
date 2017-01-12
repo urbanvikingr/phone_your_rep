@@ -1,14 +1,18 @@
 var apiData;
 
-document.getElementById("submit").addEventListener("click", click);
+document.getElementById("submit").addEventListener("click", submit);
 
-function click(e){
+function submit(e){
 	var address = document.getElementById('address').value;
-	getURL(address);
+	var lat = document.getElementById('lat').value;
+	var lng = document.getElementById('lng').value;
+	getURL(address, lat, lng);
 }
-function getURL(address){
+function getURL(address, lat, lng){
 	var request = new XMLHttpRequest();
 	console.log(address);
+	console.log(lat);
+	console.log(lng);
 	var url = "https://phone-your-rep.herokuapp.com/reps?address={"+address+"}";
 
 	request.open("GET", url);
