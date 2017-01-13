@@ -15,7 +15,7 @@ function getURL(address, lat, lng, locality){
 	console.log(lat);
 	console.log(lng);
 	console.log(locality);
-	var url = "https://phone-your-rep.herokuapp.com/reps?address={"+address"+}&lat={"+lat+"}&long={"+lng+"}&state={"+locality+"}";
+	var url = "https://phone-your-rep.herokuapp.com/reps?address={"+address+"}&lat={"+lat+"}&long={"+lng+"}&state={"+locality+"}";
 
 	request.open("GET", url);
 	request.addEventListener("load", onLoad);
