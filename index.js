@@ -26,7 +26,6 @@ function getURL(lat, lng, state){
 function onLoad(){
 	console.log("Success :)");
 	apiData = JSON.parse(this.response);
-
 	// Fixes US House of Representatives STATE-District to US House
 	apiData.forEach((card) => {
 		if(card.role.substring(0, 28) == "United States Representative"){ card.role = "United States House";}
@@ -68,7 +67,7 @@ const Card = React.createClass({
 							<SocialLink type="facebook" link={this.props.contact.facebook}/>
 						</div>
 						<div className="panel-body">
-							<h3 className="text-center m-0"> {this.props.contact.official_full} </h3>
+							<div className="card-heading row"><div className="mem-photo col-md-4"><img src={this.props.contact.photo} /></div>  <h3 className="col-md-8 text-center m-0"> {this.props.contact.official_full} </h3></div>
 
 						</div>
 					</div>
