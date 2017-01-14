@@ -1,15 +1,22 @@
 var apiData;
 
-document.getElementById("submit").addEventListener("click", click);
+document.getElementById("submit").addEventListener("click", submit);
 
-function click(e){
-	var address = document.getElementById('address').value;
-	getURL(address);
+function submit(e){
+	var lat = document.getElementById('lat').value;
+	var lng = document.getElementById('lng').value;
+	var state = document.getElementById('state').value;
+	var container = document.getElementById('root');
+	container.innerHTML = "";
+	getURL(lat, lng, state);
 }
-function getURL(address){
+
+function getURL(lat, lng, state){
 	var request = new XMLHttpRequest();
-	console.log(address);
-	var url = "https://phone-your-rep.herokuapp.com/reps?address={"+address+"}";
+	console.log(lat);
+	console.log(lng);
+	console.log(state);
+	var url = `https://phone-your-rep.herokuapp.com/reps?&lat=${lat}&long=${lng}&state=${state}`;
 
 	request.open("GET", url);
 	request.addEventListener("load", onLoad);
@@ -24,6 +31,7 @@ function onLoad(){
 	apiData.forEach((card) => {
 		if(card.role.substring(0, 28) == "United States Representative"){ card.role = "United States House";}
 	});
+
 	// Render Card List!
 	ReactDOM.render(
 	  	<CardList />,
@@ -33,7 +41,7 @@ function onLoad(){
 function onError(){
 	console.log("Failure :(");
 }
-
+	// Card component
 const Card = React.createClass({
 	getInitialState: function(){
 		return ({ animation: "", "hidden": "hidden"});
