@@ -7,8 +7,10 @@ function submit(e){
 	var lat = document.getElementById('lat').value;
 	var lng = document.getElementById('lng').value;
 	var state = document.getElementById('locality').value;
+	// debugger;
 	getURL(address, lat, lng, locality);
 }
+
 function getURL(address, lat, lng, locality){
 	var request = new XMLHttpRequest();
 	console.log(address);
@@ -16,7 +18,7 @@ function getURL(address, lat, lng, locality){
 	console.log(lng);
 	console.log(locality);
 	var url = "https://phone-your-rep.herokuapp.com/reps?address={"+address+"}&lat={"+lat+"}&long={"+lng+"}&state={"+locality+"}";
-
+	debugger;
 	request.open("GET", url);
 	request.addEventListener("load", onLoad);
 	request.addEventListener("error", onError);
