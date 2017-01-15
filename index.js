@@ -67,8 +67,15 @@ const Card = React.createClass({
 							<SocialLink type="facebook" link={this.props.contact.facebook}/>
 						</div>
 						<div className="panel-body">
-							<div className="card-heading row"><div className="mem-photo col-md-4"><img src={this.props.contact.photo} /></div>  <h3 className="col-md-8 text-center m-0"> {this.props.contact.official_full} </h3></div>
-
+							<div className="cont-heading row">
+								<img className="col-sm-3 cont-photo" src={this.props.contact.photo} />
+								<div className="col-sm-8-offset-1">
+									<h2 className="text-center m-0"> {this.props.contact.official_full} </h2>
+									<div className="offices">
+										{this.props.contact.office_locations.map((office, i)=>{return (<Office key={i} office={office} officeId={i}/>)})}
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -115,6 +122,39 @@ const networkMap = {
 		baseUrl: ''
 	}
 };
+
+const Office = React.createClass({
+	render(){
+		var officeType = this.props.office.type.charAt(0).toUpperCase() + this.props.office.type.slice(1)
+		var officeInfoId = "office-info" + this.props.officeId
+
+		var address = (this.props.office.address ? this.props.office.address + ", " :"" ) + (this.props.office.suit ? this.props.office.suit + ", " : "") + (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state;
+		// + ", " + this.props.office.suit ? this.props.office.suit + ", " : "" + this.props.office.city ? this.props.office.city+ ", " :""  + this.props.office.state
+			debugger;
+		return(
+			<div className="office">
+				<div className="office-header">
+					<a data-toggle="collapse" data-target={"#"+officeInfoId}><i className="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+					{officeType} Office - {this.props.office.phone}
+					<i className="fa fa-address-card"></i>
+				</div>
+				<div id={officeInfoId} className="collapse">
+					<p>Address: {address}</p>
+					<p>Fax: {this.props.office.fax}</p>
+					{/*District Type Office - Phone - Vcard */}
+					{/* type
+							address
+							suit
+							city
+							state
+					*/}
+				</div>
+			</div>
+		)
+	}
+
+})
+
 
 const SocialLink = React.createClass({
   render: function() {
