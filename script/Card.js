@@ -28,6 +28,8 @@ export default class Card extends React.Component{
 							<SocialLink type="youtube" link={this.props.contact.youtube}/>
 							<SocialLink type="twitter" link={this.props.contact.twitter}/>
 							<SocialLink type="facebook" link={this.props.contact.facebook}/>
+              <SocialLink type="instagram" link={this.props.contact.instagram}/>
+              <SocialLink type="google-plus" link={this.props.contact.googleplus}/>
 						</div>
             <div className="panel-body">
 							<div className="cont-heading row">

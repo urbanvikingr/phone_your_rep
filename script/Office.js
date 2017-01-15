@@ -9,9 +9,10 @@ export default class Office extends React.Component {
 		}
 	}
 
+
 	showQR(e){
 
-		e.target.nextElementSibling.innerHTML = `<img src=${this.props.office.qr_code_link} />`
+		e.target.nextElementSibling.innerHTML = `<a href=${this.props.office.qr_code_link}><img src=${this.props.office.qr_code_link} /></a>`
 		e.target.nextElementSibling.style.display = 'block'
 		var meRect = e.target.getBoundingClientRect()
 		var qrRect = e.target.nextElementSibling.getBoundingClientRect()
@@ -20,7 +21,7 @@ export default class Office extends React.Component {
 		var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 		var boxPos = {};
 
-		boxPos.left = (e.pageX - left);
+		boxPos.left = ((e.pageX/2) - left);
     boxPos.top = (e.pageY - top - qrRect.height);
 
 		// 		boxPos.left = (e.pageX - $(window).scrollLeft());
@@ -39,7 +40,7 @@ export default class Office extends React.Component {
 	}
 	render() {
 		let chevronClass = "fa fa-chevron-down"
-		var officeType = this.props.office.type.charAt(0).toUpperCase() + this.props.office.type.slice(1)
+		var officeType = this.props.office.city.charAt(0).toUpperCase() + this.props.office.city.slice(1)
 		var officeInfoId = "office-info" + this.props.officeId + this.props.cardId
 		var telHref = "tel:" + this.props.office.phone
 		var address = (this.props.office.address ? this.props.office.address : "" ) + (this.props.office.suit ? this.props.office.suit : "")
