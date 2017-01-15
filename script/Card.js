@@ -31,7 +31,7 @@ export default class Card extends React.Component{
 						</div>
             <div className="panel-body">
 							<div className="cont-heading row">
-								<img className="col-sm-3 cont-photo" src={this.props.contact.photo} />
+								<img className="col-xs-4 col-md-3 cont-photo" src={this.props.contact.photo} />
 								<div className="col-sm-8-offset-1">
 									<h3 className="text-center m-0"> {this.props.contact.official_full + " - (" + party +")" } </h3>
 								</div>
