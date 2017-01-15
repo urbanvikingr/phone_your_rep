@@ -4,7 +4,8 @@
   "description": "front-end for the phone-your-rep application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -12,15 +13,32 @@
   },
   "author": "Kyle Butts",
   "contributors": [
-    { "name" : "Kyle Butts" },
-    { "name" : "Nicolas Moise",
-      "email" : "nicolasmoise@gmail.com",
-      "url" : "https://github.com/nicolasmoise/"
+    {
+      "name": "Kyle Butts"
+    },
+    {
+      "name": "Nicolas Moise",
+      "email": "nicolasmoise@gmail.com",
+      "url": "https://github.com/nicolasmoise/"
     }
   ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kylebutts/phone_your_rep/issues"
   },
-  "homepage": "https://github.com/kylebutts/phone_your_rep#readme"
+  "homepage": "https://github.com/kylebutts/phone_your_rep#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "react-hot-loader": "^1.3.1"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
 }
