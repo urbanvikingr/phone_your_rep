@@ -1,3 +1,3 @@
-## To run:
+To start: use "python -m SimpleHTTPServer"
 
-Use local server
+Go to "localhost:8000/" to start

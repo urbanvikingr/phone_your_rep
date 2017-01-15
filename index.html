@@ -6,10 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Phone Your Rep</title>
 
-
 	<script src="https://unpkg.com/react@15/dist/react-with-addons.min.js"></script>
 	<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-  	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
 	<!-- GeoComplete -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -38,9 +37,9 @@
 						<form id = "form" class="form-group">
 						    <label for="address">Your Address</label>
 						    <input name="address" type="text" id="address" class="form-control" placeholder="Address">
-							<input name="lat" type="text" id="lat" value="">
-  							<input name="lng" type="text" id="lng" value="">
-								<input name="administrative_area_level_1" type="text" id="state" value="">
+							<input name="lat" type="hidden" id="lat" value="">
+  							<input name="lng" type="hidden" id="lng" value="">
+								<input name="administrative_area_level_1" type="hidden" id="state" value="">
 						</form>
 
 						<script>
