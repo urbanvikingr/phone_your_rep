@@ -49,6 +49,7 @@ export default class ReportButton extends React.Component {
 		</div>
 	</div>
 </div>
+
 		)
 	}
 }
