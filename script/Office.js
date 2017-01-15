@@ -1,4 +1,5 @@
 import React from 'react';
+import ReportButton from './ReportButton';
 
 export default class Office extends React.Component {
 	constructor(){
@@ -74,6 +75,8 @@ export default class Office extends React.Component {
 							city
 							state
 					*/}
+
+					<ReportButton />
 				</div>
 			</div>
 		)
