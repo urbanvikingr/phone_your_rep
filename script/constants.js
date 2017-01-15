@@ -14,5 +14,13 @@ export default {
 	"web": {
 		className: 'fa-desktop',
 		baseUrl: ''
+	},
+	"instagram": {
+		className: 'fa-instagram',
+		baseUrl: 'https://www.instagram.com/'
+	},
+	"google-plus": {
+		className: 'fa-google-plus',
+		baseUrl: 'https://www.plus.google.com/'
 	}
 }
