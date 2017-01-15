@@ -41,10 +41,10 @@ export default class Office extends React.Component {
 		let chevronClass = "fa fa-chevron-down"
 		var officeType = this.props.office.type.charAt(0).toUpperCase() + this.props.office.type.slice(1)
 		var officeInfoId = "office-info" + this.props.officeId + this.props.cardId
-
-		var address = (this.props.office.address ? this.props.office.address + ", " :"" ) + (this.props.office.suit ? this.props.office.suit + ", " : "") + (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state;
+		var telHref = "tel:" + this.props.office.phone
+		var address = (this.props.office.address ? this.props.office.address + ", " : "" ) + (this.props.office.suit ? this.props.office.suit + ", " : "") + (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state;
 		// + ", " + this.props.office.suit ? this.props.office.suit + ", " : "" + this.props.office.city ? this.props.office.city+ ", " :""  + this.props.office.state
-
+		debugger;
 		return(
 			<div className="office ">
 				<div className="office-header row">
@@ -56,7 +56,7 @@ export default class Office extends React.Component {
 						}
 						</a>
 					</span>
-					<span className="col-xs-8 text-center"><h5>{officeType} Office - {this.props.office.phone}</h5></span>
+					<span className="col-xs-8 text-center"><h5>{officeType} Office - <a href={telHref}>{this.props.office.phone}</a></h5></span>
 					<span className="col-xs-2">
 						<a className="myAddressCard" href={this.props.office.v_card_link}>
 							<i className="fa fa-address-card officeIcons"></i>
