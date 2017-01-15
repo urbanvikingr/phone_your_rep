@@ -54,6 +54,7 @@ const Card = React.createClass({
 	},
 	render: function(){
     	var contact = this.props.contacts;
+			var party = this.props.contact.party.charAt(0)
 
 		return (
 
@@ -66,17 +67,21 @@ const Card = React.createClass({
 							<SocialLink type="twitter" link={this.props.contact.twitter}/>
 							<SocialLink type="facebook" link={this.props.contact.facebook}/>
 						</div>
+
 						<div className="panel-body">
 							<div className="cont-heading row">
 								<img className="col-sm-3 cont-photo" src={this.props.contact.photo} />
 								<div className="col-sm-8-offset-1">
-									<h2 className="text-center m-0"> {this.props.contact.official_full} </h2>
-									<div className="offices">
-										{this.props.contact.office_locations.map((office, i)=>{return (<Office key={i} office={office} officeId={i}/>)})}
-									</div>
+									<h3 className="text-center m-0"> {this.props.contact.official_full + " - (" + party +")" } </h3>
+								</div>
+							</div>
+							<div className="row">
+								<div className="offices col-8-xs-offset-2">
+									{this.props.contact.office_locations.map((office, i)=>{return (<Office key={i} office={office} officeId={i} cardId={this.props.cardId}/>)})}
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 		);
@@ -91,6 +96,7 @@ const CardList = React.createClass({
 						key={i}
 						wait={250*i}
             contact={contact}
+						cardId={i}
 					/>
 			);
 		});
@@ -125,18 +131,19 @@ const networkMap = {
 
 const Office = React.createClass({
 	render(){
+		var chevronClass = "fa fa-chevron-circle-down"
 		var officeType = this.props.office.type.charAt(0).toUpperCase() + this.props.office.type.slice(1)
-		var officeInfoId = "office-info" + this.props.officeId
+		var officeInfoId = "office-info" + this.props.officeId + this.props.cardId
 
 		var address = (this.props.office.address ? this.props.office.address + ", " :"" ) + (this.props.office.suit ? this.props.office.suit + ", " : "") + (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state;
 		// + ", " + this.props.office.suit ? this.props.office.suit + ", " : "" + this.props.office.city ? this.props.office.city+ ", " :""  + this.props.office.state
-			debugger;
+
 		return(
 			<div className="office">
 				<div className="office-header">
-					<a data-toggle="collapse" data-target={"#"+officeInfoId}><i className="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
-					{officeType} Office - {this.props.office.phone}
-					<i className="fa fa-address-card"></i>
+					<a data-toggle="collapse" data-target={"#"+officeInfoId}><i className={chevronClass} aria-hidden="true"></i></a>
+					<span className="contactDetails">{officeType} Office - {this.props.office.phone}</span>
+					<a href={this.props.office.v_card_link}><i className="fa fa-address-card"></i></a>
 				</div>
 				<div id={officeInfoId} className="collapse">
 					<p>Address: {address}</p>
