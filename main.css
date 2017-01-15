@@ -1,6 +1,32 @@
+.qr-box{
+	display: none;
+	position: fixed;
+	width: 100px;
+	left: 0;
+	top: 0;
+	background-color: azure;
+	z-index: 9999;
+}
+.offices{
+	padding: 30px;
+}
+
+ .officeIcons{
+	 padding-top: 10px;
+ }
 .office{
-	border: 1px solid black;
+	padding: 5px;
+	border: 1px dotted black;
 	border-radius: 5px;
+}
+
+.officeDetails{
+	margin: 0 auto;
+}
+
+.myAddressCard{
+		float: right;
+    margin-right: 5px;
 }
 
 .cont-photo{

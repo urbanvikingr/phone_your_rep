@@ -1,5 +1,1 @@
-## To run:
-
-
-Use local server
-
+To start: use npm run dev
