@@ -40,7 +40,7 @@ export default class Office extends React.Component {
 	}
 	render() {
 		let chevronClass = "fa fa-chevron-down"
-		var officeType = this.props.office.type.charAt(0).toUpperCase() + this.props.office.type.slice(1)
+		var officeType = this.props.office.city.charAt(0).toUpperCase() + this.props.office.city.slice(1)
 		var officeInfoId = "office-info" + this.props.officeId + this.props.cardId
 		var telHref = "tel:" + this.props.office.phone
 		var address = (this.props.office.address ? this.props.office.address + ", " : "" ) + (this.props.office.suit ? this.props.office.suit : "")
