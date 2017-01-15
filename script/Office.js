@@ -35,7 +35,6 @@ export default class Office extends React.Component {
 		e.target.nextElementSibling.style.display = 'none'
   }
 
-
 	toggleInfo(){
     this.setState({showChildren: !this.state.showChildren})
 	}
@@ -44,7 +43,9 @@ export default class Office extends React.Component {
 		var officeType = this.props.office.type.charAt(0).toUpperCase() + this.props.office.type.slice(1)
 		var officeInfoId = "office-info" + this.props.officeId + this.props.cardId
 		var telHref = "tel:" + this.props.office.phone
-		var address = (this.props.office.address ? this.props.office.address + ", " : "" ) + (this.props.office.suit ? this.props.office.suit + ", " : "") + (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state;
+		var address = (this.props.office.address ? this.props.office.address + ", " : "" ) + (this.props.office.suit ? this.props.office.suit : "")
+		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
+		var building = (this.props.office.building ? this.props.office.building + ", " : "")
 		// + ", " + this.props.office.suit ? this.props.office.suit + ", " : "" + this.props.office.city ? this.props.office.city+ ", " :""  + this.props.office.state
 		debugger;
 		return(
@@ -60,6 +61,7 @@ export default class Office extends React.Component {
 					</span>
 					<span className="col-xs-8 text-center"><h5>{officeType} Office - <a href={telHref}>{this.props.office.phone}</a></h5></span>
 					<span className="col-xs-2">
+					 <span className="miles">{this.props.office.distance} mi</span>
 						<a className="myAddressCard" href={this.props.office.v_card_link}>
 							<i className="fa fa-address-card officeIcons"></i>
 						</a>
@@ -67,19 +69,22 @@ export default class Office extends React.Component {
 					</span>
 				</div>
 				<div id={officeInfoId} className="collapse">
-					<p>Address: {address}</p>
-					<p>Fax: {this.props.office.fax}</p>
-					{/*District Type Office - Phone - Vcard */}
-					{/* type
-							address
-							suit
-							city
-							state
-					*/}
+
+					<div className="col-sm-5">
+				    <p>Address:{building}</p>
+						<p>Fax:</p>
+					</div>
+
+					<div className="col-sm-5">
+					  <p>{address}</p>
+						<p>{city}</p>
+						<p>{this.props.office.fax ? <p>{this.props.office.fax}</p> : null}</p>
+					</div>
 
 					<ReportButton />
 				</div>
 			</div>
+
 		)
 	}
 };
