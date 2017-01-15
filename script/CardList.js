@@ -1,0 +1,22 @@
+import React from 'react';
+import Card from './Card';
+
+export default class CardList extends React.Component {
+  render() {
+		const cards = this.props.data.map((contact,i ) => {
+			return (
+					<Card
+						key={i}
+						wait={250*i}
+            contact={contact}
+					/>
+			);
+		});
+		return (
+			<div className="row">
+				{cards}
+			</div>
+
+		);
+	}
+}

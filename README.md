@@ -1,3 +1,3 @@
-To start: use "python -m SimpleHTTPServer"
+To start: use npm run dev
 
-Go to "localhost:8000/" to start
+Go to "localhost:8080/" to start
