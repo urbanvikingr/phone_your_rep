@@ -14,9 +14,10 @@ export default class Card extends React.Component{
 	}
   startAnimation() {
 		this.setState({ animation: "card-animation-start", "hidden": ""});
-	} 
+	}
 	render(){
     var contact = this.props.contacts;
+    var party = this.props.contact.party.charAt(0)
 
 		return (
 				<div className= {"col-md-6 col-md-offset-3 " + this.state.animation + " " + this.state.hidden}>
@@ -28,14 +29,16 @@ export default class Card extends React.Component{
 							<SocialLink type="twitter" link={this.props.contact.twitter}/>
 							<SocialLink type="facebook" link={this.props.contact.facebook}/>
 						</div>
-						<div className="panel-body">
+            <div className="panel-body">
 							<div className="cont-heading row">
 								<img className="col-sm-3 cont-photo" src={this.props.contact.photo} />
 								<div className="col-sm-8-offset-1">
-									<h2 className="text-center m-0"> {this.props.contact.official_full} </h2>
-									<div className="offices">
-										{this.props.contact.office_locations.map((office, i)=>{return (<Office key={i} office={office} officeId={i}/>)})}
-									</div>
+									<h3 className="text-center m-0"> {this.props.contact.official_full + " - (" + party +")" } </h3>
+								</div>
+							</div>
+							<div className="row">
+								<div className="offices col-8-xs-offset-2">
+									{this.props.contact.office_locations.map((office, i)=>{return (<Office key={i} office={office} officeId={i} cardId={this.props.cardId}/>)})}
 								</div>
 							</div>
 						</div>

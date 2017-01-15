@@ -9,6 +9,7 @@ export default class CardList extends React.Component {
 						key={i}
 						wait={250*i}
             contact={contact}
+            cardId={i}
 					/>
 			);
 		});
