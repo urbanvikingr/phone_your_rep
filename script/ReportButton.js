@@ -12,7 +12,7 @@ export default class ReportButton extends React.Component {
 		alert("It looks like there's no issue for you to send us!");
 	}
 }
-		return(
+		return( 
 		<div>
 		<i type="button" className="fa fa-exclamation-triangle" data-toggle="modal" data-target="#reportIssue"></i>
 		<div className="modal fade" id="reportIssue" role="dialog">
@@ -33,10 +33,23 @@ export default class ReportButton extends React.Component {
 
 						<div className="radio">
 							<label><input type="checkbox" id="trouble" name="vcard" /> Trouble Downloading V-Card</label>
+
 						</div>
 
-						<div className="radio">
-							<label><input type="checkbox" id="incorrect" name="email" /> Incorrect Email</label>
+						<div className="modal-body">
+							<p>Which information is wrong?</p>
+							<div className="radio">
+								<label><input type="checkbox" id="number" name="phone" /> Incorrect Phone Number</label>
+							</div>
+							<div className="radio">
+								<label><input type="checkbox" id="office" name="location" /> Office Location Moved</label>
+							</div>
+							<div className="radio">
+								<label><input type="checkbox" id="trouble" name="vcard" /> Trouble Downloading V-Card</label>
+							</div>
+							<div className="radio">
+								<label><input type="checkbox" id="incorrect" name="email" /> Incorrect Email</label>
+							</div>
 						</div>
 
 						<div className="modal-footer">
@@ -45,10 +58,12 @@ export default class ReportButton extends React.Component {
 
 					</div>
 				</div>
+
 	   	</div>
 		</div>
 	</div>
 </div>
+
 		)
 	}
 }

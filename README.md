@@ -1,3 +1,7 @@
-To start: use npm run dev
+Recommended node version 6.9.1
 
-Go to "localhost:8080/" to start
+To start:
+```
+npm i 
+npm run dev
+```
