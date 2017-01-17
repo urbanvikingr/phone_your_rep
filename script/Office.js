@@ -43,8 +43,9 @@ export default class Office extends React.Component {
 		var officeType = this.props.office.city.charAt(0).toUpperCase() + this.props.office.city.slice(1)
 		var officeInfoId = "office-info" + this.props.officeId + this.props.cardId
 		var telHref = "tel:" + this.props.office.phone
-		var address = (this.props.office.address ? this.props.office.address + ", " : "" ) + (this.props.office.suit ? this.props.office.suit + ", " : "") + (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state;
-
+		var address = (this.props.office.address ? this.props.office.address : "" ) + (this.props.office.suit ? this.props.office.suit : "")
+		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
+		var building = (this.props.office.building ? this.props.office.building + ", " : "")
 		return(
 			<div className="office ">
 				<div className="office-header row">
@@ -66,16 +67,27 @@ export default class Office extends React.Component {
 					</span>
 				</div>
 				<div id={officeInfoId} className="collapse">
-					<p>Address: {address}</p>
-					<p>Fax: {this.props.office.fax}</p>
-					{/*District Type Office - Phone - Vcard */}
-					{/* type
-							address
-							suit
-							city
-							state
-					*/}
-
+				<div className="row">
+					<div className="col-sm-4">
+						Address:
+					</div>
+					<div className="col-sm-8">
+						<p>{building}</p>
+						<p>{address}</p>
+						<p>{city}</p>
+					</div>
+				</div>
+				{this.props.office.fax ?
+				<div className="row">
+					<div className="col-sm-4">
+						Fax:
+					</div>
+					<div className="col-sm-8">
+						 <p>{this.props.office.fax}</p>
+					</div>
+				</div>
+				: null
+				}
 					<ReportButton />
 				</div>
 			</div>

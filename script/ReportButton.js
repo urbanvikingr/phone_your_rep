@@ -13,8 +13,8 @@ export default class ReportButton extends React.Component {
 	}
 }
 		return(
-		<div className="floatingDiv">
-		<button type="button" className="btn btn-info btn-md" data-toggle="modal" data-target="#reportIssue">Report Issue</button>
+		<div>
+		<i type="button" className="fa fa-exclamation-triangle" data-toggle="modal" data-target="#reportIssue"></i>
 		<div className="modal fade" id="reportIssue" role="dialog">
 			<div className="modal-dialog">
 				<div className="modal-content">
