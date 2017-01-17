@@ -2,20 +2,20 @@ import React from 'react';
 import Card from './Card';
 
 export default class CardList extends React.Component {
-  render() {
+	render() {
 		const cards = this.props.data.map((contact,i ) => {
 			return (
-					<Card
-						key={i}
-						wait={250*i}
-            contact={contact}
-            cardId={i}
-					/>
+				<Card
+				key={i}
+				wait={250*i}
+				contact={contact}
+				cardId={i}
+				/>
 			);
 		});
 		return (
 			<div className="row">
-				{cards}
+			{cards}
 			</div>
 
 		);
