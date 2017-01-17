@@ -16,9 +16,6 @@ function submit(e){
 
 function getURL(lat, lng, state){
 	var request = new XMLHttpRequest();
-	console.log(lat);
-	console.log(lng);
-	console.log(state);
 	var url = `https://phone-your-rep.herokuapp.com/reps?&lat=${lat}&long=${lng}&state=${state}`;
 
 	request.open("GET", url);
