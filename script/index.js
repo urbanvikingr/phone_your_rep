@@ -6,8 +6,10 @@ var apiData;
 document.getElementById("submit").addEventListener("click", submit);
 
 function submit(e){
+
 	var lat = document.getElementById('lat').value;
 	var lng = document.getElementById('lng').value;
+
 	var state = document.getElementById('state').value;
 	var container = document.getElementById('root');
 	container.innerHTML = "";

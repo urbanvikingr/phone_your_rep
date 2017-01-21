@@ -81,6 +81,10 @@
     animation-iteration-count: 1;
 }
 
+.fa fa-exclamation-triangle {
+	text-align: right;
+}
+
 @keyframes cardEnter {
   from {
     -webkit-transform: translate3d(-50%, 0, 0);

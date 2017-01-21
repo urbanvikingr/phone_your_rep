@@ -12,38 +12,40 @@ export default class ReportButton extends React.Component {
 				alert("It looks like there's no issue for you to send us!");
 			}
 		}
+		return(
+			<div>
+				<i type="button" className="fa fa-exclamation-triangle" data-toggle="modal" data-target="#reportIssue"></i>
+				<div className="modal fade" id="reportIssue" role="dialog">
+					<div className="modal-dialog">
+						<div className="modal-content">
+							<div className="modal-header">
+								<button type="button" className="close" data-dismiss="modal">&times;</button>
+								<h4 className="modal-title">Report an issue</h4>
+								<div className="modal-body">
+									<p>Which information is wrong?</p>
+									<div className="radio">
+										<label><input type="checkbox" id="number" name="phone" /> Incorrect Phone Number</label>
+									</div>
 
-		return (
-			<button type="button" className="btn btn-info btn-md" data-toggle="modal" data-target="#reportIssue">Report Issue</button>
-			<div className="modal fade" id="reportIssue" role="dialog">
-				<div className="modal-dialog">
-					<div className="modal-content">
+									<div className="radio">
+										<label><input type="checkbox" id="office" name="location" /> Office Location Moved</label>
+									</div>
 
-						<div className="modal-header">
-							<button type="button" className="close" data-dismiss="modal">&times;</button>
-							<h4 className="modal-title">Report an issue</h4>
-						</div>
+									<div className="radio">
+										<label><input type="checkbox" id="trouble" name="vcard" /> Trouble Downloading V-Card</label>
+									</div>
 
-						<div className="modal-body">
-							<p>Which information is wrong?</p>
-							<div className="radio">
-								<label><input type="checkbox" id="number" name="phone" /> Incorrect Phone Number</label>
+									<div className="radio">
+										<label><input type="checkbox" id="incorrect" name="email" /> Incorrect Email</label>
+									</div>
+
+									<div className="modal-footer">
+										<button type="button" id="nothingToSend" className="btn btn-default" data-dismiss="modal" onClick={nothingToSend}>Send</button>
+									</div>
+
+								</div>
 							</div>
-							<div className="radio">
-								<label><input type="checkbox" id="office" name="location" /> Office Location Moved</label>
-							</div>
-							<div className="radio">
-								<label><input type="checkbox" id="trouble" name="vcard" /> Trouble Downloading V-Card</label>
-							</div>
-							<div className="radio">
-								<label><input type="checkbox" id="incorrect" name="email" /> Incorrect Email</label>
-							</div>
-						</div>
-
-						<div className="modal-footer">
-							<button type="button" id="nothingToSend" className="btn btn-default" data-dismiss="modal" onClick={nothingToSend}>Send</button>
-						</div>
-
+			   		</div>
 					</div>
 				</div>
 			</div>

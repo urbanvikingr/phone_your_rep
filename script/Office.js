@@ -9,9 +9,10 @@ export default class Office extends React.Component {
 		}
 	}
 
+
 	showQR(e){
 
-		e.target.nextElementSibling.innerHTML = `<img src=${this.props.office.qr_code_link} />`
+		e.target.nextElementSibling.innerHTML = `<a href=${this.props.office.qr_code_link}><img src=${this.props.office.qr_code_link} /></a>`
 		e.target.nextElementSibling.style.display = 'block'
 		var meRect = e.target.getBoundingClientRect()
 		var qrRect = e.target.nextElementSibling.getBoundingClientRect()
@@ -20,7 +21,7 @@ export default class Office extends React.Component {
 		var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 		var boxPos = {};
 
-		boxPos.left = (e.pageX - left);
+		boxPos.left = ((e.pageX/2) - left);
     boxPos.top = (e.pageY - top - qrRect.height);
 
 		// 		boxPos.left = (e.pageX - $(window).scrollLeft());
@@ -34,18 +35,19 @@ export default class Office extends React.Component {
 		e.target.nextElementSibling.style.display = 'none'
   }
 
-
 	toggleInfo(){
     this.setState({showChildren: !this.state.showChildren})
 	}
 	render() {
 		let chevronClass = "fa fa-chevron-down"
-		var officeType = this.props.office.type.charAt(0).toUpperCase() + this.props.office.type.slice(1)
+		var officeType = this.props.office.city.charAt(0).toUpperCase() + this.props.office.city.slice(1)
 		var officeInfoId = "office-info" + this.props.officeId + this.props.cardId
-
-		var address = (this.props.office.address ? this.props.office.address + ", " :"" ) + (this.props.office.suit ? this.props.office.suit + ", " : "") + (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state;
+		var telHref = "tel:" + this.props.office.phone
+		var address = (this.props.office.address ? this.props.office.address : "" ) + (this.props.office.suit ? this.props.office.suit : "")
+		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
+		var building = (this.props.office.building ? this.props.office.building + ", " : "")
 		// + ", " + this.props.office.suit ? this.props.office.suit + ", " : "" + this.props.office.city ? this.props.office.city+ ", " :""  + this.props.office.state
-
+		debugger;
 		return(
 			<div className="office ">
 				<div className="office-header row">
@@ -57,8 +59,9 @@ export default class Office extends React.Component {
 						}
 						</a>
 					</span>
-					<span className="col-xs-8 text-center"><h5>{officeType} Office - {this.props.office.phone}</h5></span>
+					<span className="col-xs-8 text-center"><h5>{officeType} Office - <a href={telHref}>{this.props.office.phone}</a></h5></span>
 					<span className="col-xs-2">
+					 <span className="miles">{this.props.office.distance} mi</span>
 						<a className="myAddressCard" href={this.props.office.v_card_link}>
 							<i className="fa fa-address-card officeIcons"></i>
 						</a>
@@ -66,19 +69,32 @@ export default class Office extends React.Component {
 					</span>
 				</div>
 				<div id={officeInfoId} className="collapse">
-					<p>Address: {address}</p>
-					<p>Fax: {this.props.office.fax}</p>
-					{/*District Type Office - Phone - Vcard */}
-					{/* type
-							address
-							suit
-							city
-							state
-					*/}
+				<div className="row">
+					<div className="col-sm-4">
+						Address:
+					</div>
+					<div className="col-sm-8">
+						<p>{building}</p>
+						<p>{address}</p>
+						<p>{city}</p>
+					</div>
+				</div>
 
+				{this.props.office.fax ?
+				<div className="row">
+					<div className="col-sm-4">
+						Fax:
+					</div>
+					<div className="col-sm-8">
+						 <p>{this.props.office.fax}</p>
+					</div>
+				</div>
+				: null
+				}
 					<ReportButton />
 				</div>
 			</div>
+
 		)
 	}
 };
