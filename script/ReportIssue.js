@@ -14,7 +14,7 @@ export default class ReportIssue extends React.Component {
 	}
 	componentDidMount(){
 		var url = apiUrl + "api/beta/issues/new"
-		fetch(url).then(response => response.json().then(data => this.setState({issues: data.issueCategories})))
+		fetch(url).then(response => response.json().then(data => this.setState({issues: data.issue_categories})))
 		// this.setState({issues:['Incorrect phone number', 'Office location moved', 'Trouble downloading v-card', 'Incorrect Email']})
 	}
 
