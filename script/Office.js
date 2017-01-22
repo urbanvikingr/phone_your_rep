@@ -1,5 +1,5 @@
 import React from 'react';
-import ReportButton from './ReportButton';
+import ReportIssue from './ReportIssue';
 
 export default class Office extends React.Component {
 	constructor(){
@@ -88,7 +88,10 @@ export default class Office extends React.Component {
 				</div>
 				: null
 				}
-					<ReportButton />
+					<ReportIssue
+						officeId={this.props.officeId}
+						officeCardId={this.props.officeId + this.props.cardId}
+					/>
 				</div>
 			</div>
 		)
