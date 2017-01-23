@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom';
 import CardList from './CardList';
+import './apiInfo';
+
 
 var apiData;
 
@@ -18,7 +20,7 @@ function submit(e){
 
 function getURL(lat, lng, state){
 	var request = new XMLHttpRequest();
-	var url = `https://phone-your-rep.herokuapp.com/reps?&lat=${lat}&long=${lng}&state=${state}`;
+	var url = `${apiUrl}reps?&lat=${lat}&long=${lng}&state=${state}`;
 
 	request.open("GET", url);
 	request.addEventListener("load", onLoad);
