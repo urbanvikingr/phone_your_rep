@@ -90,7 +90,7 @@ export default class Office extends React.Component {
 				}
 					<ReportIssue
 						officeId={this.props.office.office_id}
-						officeCardId={this.props.officeId + this.props.cardId}
+						officeCardId={this.props.officeId.toString() + this.props.cardId.toString()}
 					/>
 				</div>
 			</div>

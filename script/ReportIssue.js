@@ -11,8 +11,9 @@ export default class ReportIssue extends React.Component {
 		}
 		this.handleChange = this.handleChange.bind(this);
 		this.submitReport = this.submitReport.bind(this);
+		this.getIssues = this.getIssues.bind(this);
 	}
-	componentDidMount(){
+	getIssues(){
 		var url = apiUrl + "api/beta/issues/new"
 		fetch(url).then(response => response.json().then(data => this.setState({issues: data.issue_categories})))
 		// this.setState({issues:['Incorrect phone number', 'Office location moved', 'Trouble downloading v-card', 'Incorrect Email']})
@@ -51,7 +52,7 @@ export default class ReportIssue extends React.Component {
 	render() {
 		return(
 			<div>
-				<i type="button" className="fa fa-exclamation-triangle" data-toggle="modal" data-target={"#reportIssue" + this.props.officeCardId}></i>
+				<i type="button" className="fa fa-exclamation-triangle" data-toggle="modal" onClick={this.getIssues} data-target={"#reportIssue" + this.props.officeCardId}></i>
 				<div className="modal fade" id={"reportIssue" + this.props.officeCardId} role="dialog">
 					<div className="modal-dialog">
 						<div className="modal-content">
