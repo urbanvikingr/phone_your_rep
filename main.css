@@ -1,3 +1,7 @@
+.submit-report{
+	display:none;
+}
+
 .qr-box{
 	display: none;
 	position: fixed;

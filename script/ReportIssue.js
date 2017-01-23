@@ -3,8 +3,8 @@ import Issue from './Issue';
 import './apiInfo';
 
 export default class ReportIssue extends React.Component {
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 		this.state = {
 			issues: [],
 			selected: []
@@ -12,11 +12,29 @@ export default class ReportIssue extends React.Component {
 		this.handleChange = this.handleChange.bind(this);
 		this.submitReport = this.submitReport.bind(this);
 		this.getIssues = this.getIssues.bind(this);
+		this.displayButton = this.displayButton.bind(this);
+		this.resetIssues = this.resetIssues.bind(this);
+
 	}
+
+
+
 	getIssues(){
 		var url = apiUrl + "api/beta/issues/new"
+		var capId = 'recaptcha' + this.props.officeCardId
 		fetch(url).then(response => response.json().then(data => this.setState({issues: data.issue_categories})))
+		grecaptcha.render(capId, {
+					'sitekey' : '6LewuRIUAAAAAGST0OIwX_O-DZrLwrX6HRaq-r5u',
+					'callback' : this.displayButton
+				});
 		// this.setState({issues:['Incorrect phone number', 'Office location moved', 'Trouble downloading v-card', 'Incorrect Email']})
+	}
+
+	displayButton(){
+		let buttonEl = document.getElementById("submit-report" + this.props.officeCardId)
+		let captchaEl = document.getElementById('recaptcha' + this.props.officeCardId)
+		captchaEl.style.display = "none"
+		buttonEl.style.display = "block"
 	}
 
 	handleChange(e){
@@ -47,6 +65,17 @@ export default class ReportIssue extends React.Component {
 			var url = apiUrl + "api/beta/issues"
 			$.post(url,issueSubmission);
 		}
+		this.resetIssues();
+	}
+
+	resetIssues(){
+		let buttonEl = document.getElementById("submit-report" + this.props.officeCardId)
+		let captchaEl = document.getElementById('recaptcha' + this.props.officeCardId)
+		this.setState({selected: [], issues:[]})
+		captchaEl.innerHTML = ""
+		captchaEl.style.display = "block"
+		buttonEl.style.display = "none"
+		grecaptcha.reset()
 	}
 
 	render() {
@@ -70,7 +99,8 @@ export default class ReportIssue extends React.Component {
 
 
 									<div className="modal-footer">
-										<button type="button" id="nothingToSend" className="btn btn-default" data-dismiss="modal" onClick={this.submitReport}>Send</button>
+										<div id={'recaptcha' + this.props.officeCardId}></div>
+										<input type="submit" id={"submit-report" + this.props.officeCardId} className="btn btn-default submit-report" value="Send" onClick={this.submitReport} data-dismiss="modal"/>
 									</div>
 								</div>
 							</div>
