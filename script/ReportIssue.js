@@ -37,12 +37,14 @@ export default class ReportIssue extends React.Component {
 			console.log("It looks like there's no issue for you to send us!");
 		}
 		else{
-			var issues = {
-				issueType: this.state.issues,
-				officeLocationId: this.props.officeId
+			var issueSubmission = {
+				issue: {
+					issue_type: this.state.selected,
+					office_location_id: this.props.officeId
+				}
 			}
-			var url = apiUrl + "/api/beta/issues"
-			$.post(url,issues);
+			var url = apiUrl + "api/beta/issues"
+			$.post(url,issueSubmission);
 		}
 	}
 

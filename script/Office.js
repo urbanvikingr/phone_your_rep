@@ -89,7 +89,7 @@ export default class Office extends React.Component {
 				: null
 				}
 					<ReportIssue
-						officeId={this.props.officeId}
+						officeId={this.props.office.office_id}
 						officeCardId={this.props.officeId + this.props.cardId}
 					/>
 				</div>

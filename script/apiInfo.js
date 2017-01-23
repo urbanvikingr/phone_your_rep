@@ -1,2 +1,2 @@
 
-global.apiUrl = "https://phone-your-rep.herokuapp.com/"
+global.apiUrl = "http://localhost:3000/"
