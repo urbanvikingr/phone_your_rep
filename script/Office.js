@@ -32,7 +32,7 @@ export default class Office extends React.Component {
 
 	leaveQR(e){
 		e.target.nextElementSibling.style.display = 'none'
-  }
+  	}
 
 
 	toggleInfo(){
