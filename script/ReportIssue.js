@@ -24,7 +24,7 @@ export default class ReportIssue extends React.Component {
 		var capId = 'recaptcha' + this.props.officeCardId
 		fetch(url).then(response => response.json().then(data => this.setState({issues: data.issue_categories})))
 		grecaptcha.render(capId, {
-					'sitekey' : '6LewuRIUAAAAAGST0OIwX_O-DZrLwrX6HRaq-r5u',
+					'sitekey' : '6LeP8hIUAAAAAA0_otB8Q8p2QP1qAptDbEdiNnTL',
 					'callback' : this.displayButton
 				});
 		// this.setState({issues:['Incorrect phone number', 'Office location moved', 'Trouble downloading v-card', 'Incorrect Email']})
