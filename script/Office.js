@@ -1,5 +1,5 @@
 import React from 'react';
-import ReportButton from './ReportButton';
+import ReportIssue from './ReportIssue';
 
 export default class Office extends React.Component {
 	constructor(){
@@ -21,19 +21,19 @@ export default class Office extends React.Component {
 		var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 		var boxPos = {};
 
-		boxPos.left = ((e.pageX/2) - left);
+		boxPos.left = (e.pageX - left);
     boxPos.top = (e.pageY - top - qrRect.height);
 
 		// 		boxPos.left = (e.pageX - $(window).scrollLeft());
 		// 		boxPos.top = (e.pageY - $(window).scrollTop() - $(".info-box").height());
 		e.target.nextElementSibling.style.left = boxPos.left + "px"
 		e.target.nextElementSibling.style.top = boxPos.top + "px"
-		// debugger;
 		}
 
 	leaveQR(e){
 		e.target.nextElementSibling.style.display = 'none'
   }
+
 
 	toggleInfo(){
     this.setState({showChildren: !this.state.showChildren})
@@ -46,8 +46,6 @@ export default class Office extends React.Component {
 		var address = (this.props.office.address ? this.props.office.address : "" ) + (this.props.office.suit ? this.props.office.suit : "")
 		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
 		var building = (this.props.office.building ? this.props.office.building + ", " : "")
-		// + ", " + this.props.office.suit ? this.props.office.suit + ", " : "" + this.props.office.city ? this.props.office.city+ ", " :""  + this.props.office.state
-		debugger;
 		return(
 			<div className="office ">
 				<div className="office-header row">
@@ -61,11 +59,11 @@ export default class Office extends React.Component {
 					</span>
 					<span className="col-xs-8 text-center"><h5>{officeType} Office - <a href={telHref}>{this.props.office.phone}</a></h5></span>
 					<span className="col-xs-2">
-					 <span className="miles">{this.props.office.distance} mi</span>
-						<a className="myAddressCard" href={this.props.office.v_card_link}>
+						<span className="pull-right card-link">{this.props.office.distance}mi</span>
+						<a className="pull-right card-link myAddressCard" href={this.props.office.v_card_link}>
 							<i className="fa fa-address-card officeIcons"></i>
 						</a>
-						{this.props.office.qr_code_link ? <div className="QRcode"><i onMouseOver={this.showQR.bind(this)} onMouseLeave={this.leaveQR.bind(this)} className="fa fa-qrcode"></i><div className="qr-box"></div></div> : null}
+						{this.props.office.qr_code_link ? <div className="pull-right card-link QRcode"><i onMouseOver={this.showQR.bind(this)} onMouseLeave={this.leaveQR.bind(this)} className="fa fa-qrcode"></i><div className="qr-box"></div></div> : null}
 					</span>
 				</div>
 				<div id={officeInfoId} className="collapse">
@@ -79,7 +77,6 @@ export default class Office extends React.Component {
 						<p>{city}</p>
 					</div>
 				</div>
-
 				{this.props.office.fax ?
 				<div className="row">
 					<div className="col-sm-4">
@@ -91,10 +88,12 @@ export default class Office extends React.Component {
 				</div>
 				: null
 				}
-					<ReportButton />
+					<ReportIssue
+						officeId={this.props.office.office_id}
+						officeCardId={this.props.officeId.toString() + this.props.cardId.toString()}
+					/>
 				</div>
 			</div>
-
 		)
 	}
 };
