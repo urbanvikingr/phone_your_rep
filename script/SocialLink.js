@@ -5,7 +5,7 @@ export default class SocialLink extends React.Component {
     render() {
 
         function _socialLink(link, network) {;
-            var classes = 'fa ' + network.className + ' fa-white';
+            var classes = 'fa ' + network.className;
             var url = network.baseUrl + link;
             return (
                 <a className="card-link" href={url} target="_blank">

@@ -31,12 +31,7 @@ export default class Card extends React.Component {
 				<div className="card row">
 					<div className="col-4">
 						<Portrait link={this.props.contact.photo}></Portrait>
-					</div>
-					<div className="col-8">
-						<Name party={party} name={this.props.contact.official_full} chamber={this.props.contact.role}></Name>
-
-						<OfficeList offices={this.props.contact.office_locations} ></OfficeList>
-
+						
 						<div className="card-social">
 							<SocialLink type="web" link={this.props.contact.url}/>
 							<SocialLink type="youtube" link={this.props.contact.youtube}/>
@@ -45,6 +40,12 @@ export default class Card extends React.Component {
 							<SocialLink type="instagram" link={this.props.contact.instagram}/>
 							<SocialLink type="google-plus" link={this.props.contact.googleplus}/>
 						</div>
+					</div>
+					<div className="col-8">
+						<Name party={party} name={this.props.contact.official_full} chamber={this.props.contact.role}></Name>
+
+						<OfficeList offices={this.props.contact.office_locations} ></OfficeList>
+
 					</div>
 
 				</div>
