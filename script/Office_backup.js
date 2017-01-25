@@ -22,7 +22,7 @@ export default class Office extends React.Component {
 		var boxPos = {};
 
 		boxPos.left = (e.pageX - left);
-    boxPos.top = (e.pageY - top - qrRect.height);
+    	boxPos.top = (e.pageY - top - qrRect.height);
 
 		// 		boxPos.left = (e.pageX - $(window).scrollLeft());
 		// 		boxPos.top = (e.pageY - $(window).scrollTop() - $(".info-box").height());

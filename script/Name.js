@@ -8,8 +8,8 @@ export default class SocialLink extends React.Component {
 				<h3 className="card-member">
 					{this.props.name}
 				</h3>
-				<p className="card-office">
-					{this.props.office}
+				<p className="card-chamber">
+					{this.props.chamber}
 				</p>
 				<img className="card-party" src={'./' + this.props.party + '.png'}></img>
 			</div>

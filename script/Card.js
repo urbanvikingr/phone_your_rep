@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialLink from './SocialLink';
-import Office from './Office';
+import OfficeList from './OfficeList';
 import Portrait from './Portrait.js';
 import Name from './Name.js'
 // Card component
@@ -33,13 +33,9 @@ export default class Card extends React.Component {
 						<Portrait link={this.props.contact.photo}></Portrait>
 					</div>
 					<div className="col-8">
-						<Name party={party} name={this.props.contact.official_full} office={this.props.contact.role}></Name>
+						<Name party={party} name={this.props.contact.official_full} chamber={this.props.contact.role}></Name>
 
-						<div className="offices col-8-xs-offset-2">
-							{this.props.contact.office_locations.map((office, i) => {
-								return (<Office key={i} office={office} officeId={i} cardId={this.props.cardId}/>)
-							})}
-						</div>
+						<OfficeList offices={this.props.contact.office_locations} ></OfficeList>
 
 						<div className="card-social">
 							<SocialLink type="web" link={this.props.contact.url}/>
