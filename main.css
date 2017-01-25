@@ -172,7 +172,7 @@ footer a{
 }
 .card-link {
     margin: 0px 6px;
-	font-size: 30px;
+	font-size: 2rem;
 }
 .card-link:hover {
     opacity: 1;
@@ -200,6 +200,10 @@ footer a{
 }
 .font-open-sans {
     font-family: 'Open Sans Bold', sans-serif;
+}
+
+.fa-icon{
+	font-size: 2rem;
 }
 .fa-white{
 	color: #fff;
