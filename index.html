@@ -29,7 +29,7 @@
 	<script src="jquery.geocomplete.min.js"></script>
 
 	<!-- Fonts && Font Awesome -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans|Alfa+Slab+One" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<!-- CSS Reset -->
@@ -47,7 +47,7 @@
 
 <body>
 	<div class="wrapper">
-		<nav>
+		<nav style="position:relative; ">
 			<!-- Fix for Deployment -->
 			<a href="#" id="logo">Phone Your Reps</a>
 		</nav>
@@ -60,7 +60,7 @@
 					</div>
 
 					<div id="about" class="col-6">
-						<h1 class="font-red font-open-sans font-emphasis">It should be easy to call your members of Congress.</h1>
+						<h1 class="font-red font-alfa-slab-one font-emphasis">It should be easy to call your members of Congress.</h1>
 
 						<p class="font-gray font-raleway">
 							If we want to be effective in resistence, we need to voice our opinions to Congressmembers every chance we get. For our Congressmembers to represent us, they need to hear from us.
@@ -75,14 +75,14 @@
 							</p>
 
 							<div class="row">
-								<div class="col-8 m-0">
+								<div class="col-8 form-address">
 									<input name="address" type="text" id="address" class="form-input" placeholder="Your Address">
 									<input name="lat" type="hidden" id="lat" value="">
 									<input name="lng" type="hidden" id="lng" value="">
 									<input name="administrative_area_level_1" type="hidden" id="state" value="">
 								</div>
 
-								<div class="col-4 m-0-tb">
+								<div class="col-4 form-search">
 									<div id="submit" class="form-btn">Search</div>
 								</div>
 							</div>
@@ -91,10 +91,11 @@
 				</div>
 
 				<div id="root">
-
+					
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 
 	<footer>
