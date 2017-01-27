@@ -42,31 +42,7 @@ class Office extends React.Component {
 
         return (
             <div className="card-office">
-                <button className="card-office-btn" onClick={function(e){
-					togglePanel(officeId);
-				}}>
-					<div className="card-office-btn-office">
-						<i className={caret} aria-hidden="true"></i>
-						<h1 className="card-office-btn-name font-white">{office}</h1>
-					</div>
-
-					<a className="card-office-btn-link font-white" href={this.props.office.v_card_link}><i className="fa fa-arrow-circle-o-down fa-white" aria-hidden="true"></i> Download contact</a>
-                </button>
-                <div className={"card-office-panel row " + isHidden}>
-					<div className="col-6 card-office-panel-phone">
-						<i className="fa fa-phone-square fa-icon fa-fw " aria-hidden="true"></i>
-						<p>
-							<a href={tel_link}>{this.props.office.phone}</a>
-						</p>
-					</div>
-
-					<div className="col-6 card-office-panel-office ">
-						<i className="fa fa-building fa-icon fa-fw " aria-hidden="true"></i>
-						<p>{building}</p>
-						<p>{address}</p>
-						<p>{city}</p>
-					</div>
-                </div>
+                
             </div>
         )
     }
