@@ -37,21 +37,27 @@ class Office extends React.Component {
 
 		var togglePanel = this.props.togglePanel;
 		var officeId = this.props.officeId;
-		var isHidden = (this.props.toggleOfficeId == officeId) ? null : "hidden";
+		var isHidden = (this.props.toggleOfficeId == officeId) ? "" : "hidden";
 		var caret = (this.props.toggleOfficeId == officeId) ? "fa fa-caret-down fa-white card-office-btn-caret" :  "fa fa-caret-up fa-white card-office-btn-caret"
 
         return (
             <div className="card-office">
-                <button className="card-office-btn" onClick={function(e){
+				<div className="card-office-btn" onClick={function(e){
 					togglePanel(officeId);
 				}}>
 					<div className="card-office-btn-office">
 						<i className={caret} aria-hidden="true"></i>
 						<h1 className="card-office-btn-name font-white">{office}</h1>
 					</div>
+					<div className="card-office-btn-link">
+						<a className="font-white" href={this.props.office.v_card_link}>
+							<i className="fa fa-arrow-circle-o-down fa-white" aria-hidden="true"></i>
+							{" Download contact"}
+						</a>
+					</div>
+				    <div className="spacer"></div>
+                </div>
 
-					<a className="card-office-btn-link font-white" href={this.props.office.v_card_link}><i className="fa fa-arrow-circle-o-down fa-white" aria-hidden="true"></i> Download contact</a>
-                </button>
                 <div className={"card-office-panel row " + isHidden}>
 					<div className="col-6 card-office-panel-phone">
 						<i className="fa fa-phone-square fa-icon fa-fw " aria-hidden="true"></i>
@@ -67,6 +73,7 @@ class Office extends React.Component {
 						<p>{city}</p>
 					</div>
                 </div>
+			    <div className="spacer"></div>
             </div>
         )
     }
