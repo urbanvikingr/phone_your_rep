@@ -1,101 +1,308 @@
-.submit-report{
-	display:none;
-}
-
-.qr-box{
-	display: none;
-	position: fixed;
-	width: 100px;
-	left: 0;
-	top: 0;
-	background-color: azure;
-	z-index: 9999;
-}
-.offices{
-	padding: 30px;
-}
-
- .officeIcons{
-	 padding-top: 10px;
- }
-.office{
-	padding: 5px;
-	border: 1px dotted black;
-	border-radius: 5px;
-}
-
-.officeDetails{
-	margin: 0 auto;
-}
 
 
-.cont-photo{
-	widh: 100%;
+nav {
+    margin: 0 auto;
+    padding: 4rem 0;
+    border-bottom: .1rem solid #d1d1d1;
+	/* background: #30415D; */
 }
-
-.fa-white{
-	color:white;
-}
-.card-link{
-	margin: 0px 6px;
-}
-.card-link:hover{
-	opacity: 1;
-}
-.d-inline-block{
-	display: inline-block;
-}
-.m-0{
-	margin: 0;
-}
-.banner{
-	background-image: url(banner.jpg);
+nav{
+	background-image: url(header.png);
 	background-position: center;
-	background-size:cover;
-	width: 100%;
-	min-height: 300px;
+	background-size: cover;
 }
-.container{
-	background-color: white;
-	border: 1px #aaa solid;
-	border-radius: 4px;
-	margin-top: -140px;
+#logo {
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1.2s;
+}
+.wrapper{
+	min-height: 95%;
+    background: #f4f5f6;
+	padding-bottom: 8rem;
+}
+footer{
+	min-height: 5%;
+	background-color: #30415D;
+}
+footer a{
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	padding-top: .5rem;
 }
 
-/* Mobile Settings */
-@media only screen and (max-width : 480px) {
-	.container{
-		padding: 0 20px;
-		margin: -60px 5px;
-	}
+@media only screen and (min-width: 60em) {
+    /* 960px */
+    .container {
+        width: 90%;
+        max-width: 80rem;
+    }
 }
+
+/* About */
+#capitol {
+    padding-top: 2rem;
+}
+#about h1 {
+    padding-top: 3rem;
+}
+
+#about p {
+    padding-top: 2rem;
+}
+
+/* Form */
+.form-label{
+	font-size: 1rem;
+}
+.form-address{
+	margin: 0!important;
+}
+.form-input{
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: transparent;
+
+	border: 4px solid #30415D;
+	width: 100%;
+
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	font-size: 1.5em;
+	line-height: 2em;
+	padding: .5rem 1rem;
+}
+.form-search{
+	margin-top: 0!important;
+	margin-bottom: 0!important;
+}
+.form-btn{
+	margin-top: 0!important;
+	margin-bottom: 0!important;
+	display: inline-block;;
+	box-sizing: border-box;
+
+	border: 4px solid #30415D;
+
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	font-size: 2em;
+	line-height: 1.5em;
+	padding: .5rem 2rem;
+	background: transparent;
+
+	/* animation */
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	transition: all ease 0.2s;
+}
+.form-btn:hover {
+	cursor: pointer;
+    background-color: #30415D;
+    color: #FFF;
+}
+/* Card */
+.card-list{
+	padding-top: 3rem;
+}
+.card{
+	width: 70%;
+	max-width: 60rem;
+	margin: 0 auto;
+	border: 4px solid #6DA2C9;
+}
+
+/* Photo */
+.card-photo{
+	padding-top: 1rem;
+	width: 15rem;
+}
+
+/* Name */
+.card-member{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+	padding-top: 1rem;
+}
+.card-chamber{
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+}
+
+/* Office */
+.spacer{
+	clear:both;
+}
+.card-office{
+	padding-top: .25rem;
+}
+.hidden{
+	display: none;
+}
+.card-office-btn{
+	border: none;
+	outline: none;
+
+	box-sizing: border-box;
+	width: 100%;
+	background: #30415D;
+	padding: 1rem .5rem;
+}
+.card-office-btn-caret{
+	float: left;
+	padding-left: .5rem;
+    font-size: 2rem;
+}
+.card-office-btn-name{
+	float: left;
+	font-size: 2rem;
+	padding-left: .5rem;
+	color: #000;
+}
+.card-office-btn-link{
+	float: right;
+	color: #000;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-style: italic;
+    font-size: 1rem;
+	padding-top: .5rem;
+    padding-right: .5rem;
+}
+.card-office-panel{
+	box-sizing: border-box;
+	width: 100%;
+	border: 4px solid #30415D;
+}
+
+
+
+/* Social */
+.card-social{
+	display: block;
+	padding-top: 1rem;
+}
+.card-link {
+    margin: 0px 6px;
+	font-size: 2rem;
+}
+.card-link:hover {
+    opacity: 1;
+}
+
+
+/* Font */
+.font-right {
+    text-align: right;
+}
+.font-white {
+    color: #fff;
+}
+.font-gray{
+	color: #333;
+}
+.font-red{
+	color: #CF6766;
+}
+.font-emphasis{
+	text-shadow: 1px 1px 1px #333;
+}
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+.font-open-sans {
+    font-family: 'Open Sans Bold', sans-serif;
+}
+.font-alfa-slab-one {
+	font-family: 'Alfa Slab One', sans-serif;
+}
+
+.fa-icon{
+	font-size: 2rem;
+}
+.fa-white{
+	color: #fff;
+}
+
+
+/* Animations */
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 
 /* Animation */
-.hidden{
-	opacity: 0;
+.hidden {
+    opacity: 0;
 }
-.card-animation-start{
+
+.card-animation-start {
     animation-name: cardEnter;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
 }
 
-.fa fa-exclamation-triangle {
-	text-align: right;
-}
 
 @keyframes cardEnter {
-  from {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
-	opacity: 0;
-    visibility: visible;
-  }
+    from {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        opacity: 0;
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
 
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  	opacity: 1;
-  }
+
+
+
+/*
+	Mobile Settings
+*/
+@media only screen and (max-width: 55em){
+	.card{
+		width: 100%!important;
+	}
+	.form-address{
+		width: 100%;
+	}
+	.form-search{
+		display: block;
+		text-align: center;
+		margin: .5rem 0 0 0 !important;
+	}
+	.card-office-btn-office{
+		display: inline-block;
+		text-align: center;
+	}
+	.card-office-btn-link{
+		float: none;
+		padding-right: 0;
+		padding-top: 1rem;
+		font-size: 1rem;
+		text-decoration: underline;
+	}
+
+
 }

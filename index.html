@@ -1,72 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Phone Your Rep</title>
 
+	<!-- Facebook Meta -->
+	<!-- Fix for Deployment -->
+	<meta property="og:url" content="https://msimonborg.github.io/phone_your_rep"/>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Phone Your Rep" />
+	<meta property="og:description" content="Download all of your representatives' contact info straight to your phone. Then call them every day." />
+	<meta property="og:image" content="http://www.msimonborg.com/phone_your_rep/header.png" />
+
 	<!-- React with Addons  -->
 	<script src="https://unpkg.com/react@15/dist/react-with-addons.min.js"></script>
 	<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-	<!-- GeoComplete -->
+	<!-- JQuery and Google Maps API-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN47V710PFxcFAGY3Gx6hipg7P3CWcQn8&libraries=places"></script>
-	<script src="jquery.geocomplete.min.js"></script>
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN47V710PFxcFAGY3Gx6hipg7P3CWcQn8&libraries=places&v=3"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 
+	<!-- GeoComplete -->
+	<script src="jquery.geocomplete.min.js"></script>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Fonts && Font Awesome -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans|Alfa+Slab+One" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- CSS Reset -->
+	<link rel="stylesheet" href="reset.css">
+
+	<!-- Simple Grid -->
+	<link rel="stylesheet" href="simple-grid.css">
+
+	<!-- Main CSS -->
 	<link rel="stylesheet" href="main.css">
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
 
 
 </head>
+
 <body>
-		<div class="banner"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 style="text-align: center">Phone Your Reps</h1>
+	<div class="wrapper">
+		<nav style="position:relative; ">
+			<!-- Fix for Deployment -->
+			<a href="#" id="logo">Phone Your Rep</a>
+		</nav>
 
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<div class="form-horizontal">
-						<form id = "form" class="form-group">
-						    <label for="address">Your Address</label>
-						    <input name="address" type="text" id="address" class="form-control" placeholder="Address">
-							<input name="lat" type="hidden" id="lat" value="">
-  							<input name="lng" type="hidden" id="lng" value="">
-								<input name="administrative_area_level_1" type="hidden" id="state" value="">
+		<div class="body-content">
+			<div class="container">
+				<div class="row">
+					<div id="capitol" class="col-6">
+						<img src="uscapitol.png" alt="US Capitol" style="width: 100%">
+					</div>
+
+					<div id="about" class="col-6">
+						<h1 class="font-red font-alfa-slab-one font-emphasis">It should be easy to call your representatives in Congress.</h1>
+
+						<p class="font-gray font-raleway">
+							If we want to have an effect on our politics, we need good representation. For our reps to represent us, they need to hear from us.
+						</p>
+						<p class="font-gray font-raleway">
+							We've made it easy to download contact info for your representatives. Just enter your address.
+						</p>
+
+						<form id="form" class="form-group" onsubmit="">
+							<p class="font-gray font-raleway form-label">
+								Get Your Reps In Your Phone:
+							</p>
+
+							<div class="row">
+								<div class="col-8 form-address">
+									<input name="address" type="text" id="address" class="form-input" placeholder="Your Address">
+									<input name="lat" type="hidden" id="lat" value="">
+									<input name="lng" type="hidden" id="lng" value="">
+								</div>
+
+								<div class="col-4 form-search">
+									<div id="submit" class="form-btn">Search</div>
+								</div>
+							</div>
 						</form>
-
-						<script>
-							$("#address").geocomplete({ details: "form" });
-						</script>
-
-						<div class="form-group">
-						    <div class="col-md-offset-4 col-md-6">
-						      	<button id="submit" type="submit" class="btn btn-primary">Load your Reps</button>
-						    </div>
-						</div>
 					</div>
 				</div>
-			</div>
 
-			<div id="root"></div>
+				<div id="root">
+
+				</div>
+			</div>
 		</div>
+	</div>
+	</div>
+
+	<footer>
+		<a href="https://github.com/kylebutts/phone_your_rep">
+			<i class="fa fa-github font-white icon" aria-hidden="true"></i>
+		</a>
+	</footer>
+
+
+	<script>
+		$("#address").geocomplete({
+			details: "form"
+		});
+	</script>
+
 	<script src="bundle.js"></script>
 
 	<!-- reCAPTCHA  -->
 
 </body>
+
 </html>
