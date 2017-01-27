@@ -21,7 +21,31 @@ module.exports = Object.assign({}, require('./webpack.config'),
           from: './index.html'
         },
         {
-          from: './banner.jpg'
+          from: './d.png'
+        },
+        {
+          from: './header.ai'
+        },
+        {
+          from: './header.png'
+        },
+        {
+          from: './i.png'
+        },
+        {
+          from: './person.png'
+        },
+        {
+          from: './r.png'
+        },
+        {
+          from: './reset.css'
+        },
+        {
+          from: './simple-grid.css'
+        },
+        {
+          from: './uscapitol.png'
         },
         {
           from: './main.css'

@@ -30,7 +30,7 @@ export default class OfficeList extends React.Component {
 class Office extends React.Component {
     render() {
 		var office = this.props.office.city;
-		var tel_link = "tel"+this.props.office.phone;
+		var tel_link = "tel:" + this.props.office.phone;
 		var address = (this.props.office.address ? this.props.office.address : "" ) + (this.props.office.suit ? this.props.office.suit : "");
 		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
 		var building = (this.props.office.building ? this.props.office.building + ", " : "");
