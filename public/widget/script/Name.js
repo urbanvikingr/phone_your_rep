@@ -6,7 +6,7 @@ export default class Name extends React.Component {
 		return (
 			<div className="card-name">
 				<h3 className="card-member">
-					{this.props.office + this.props.name + "- (" + this.props.party + ")"}
+					{this.props.office + this.props.name + " - (" + this.props.party + ")"}
 				</h3>
 			</div>
 		);
