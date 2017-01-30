@@ -3,12 +3,12 @@ const path = require('path');
 module.exports = {
 	context: __dirname,
     entry: {
-		bundle: "./public/script/index.js",
-		widget: "./public/widget/script/index.js"
+		bundle: "./doc/script/index.js",
+		widget: "./doc/widget/script/index.js"
 	},
     output: {
-		path: path.resolve(__dirname, "build"),
-    	publicPath: "/public/",
+		path: path.resolve(__dirname, "doc"),
+    	publicPath: "/doc/",
         filename: "[name].js"
     },
     module: {
