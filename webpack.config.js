@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
 	context: __dirname,
     entry: {
@@ -5,7 +7,8 @@ module.exports = {
 		widget: "./public/widget/script/index.js"
 	},
     output: {
-        path: __dirname,
+		path: path.resolve(__dirname, "build"),
+    	publicPath: "/public/",
         filename: "[name].js"
     },
     module: {
