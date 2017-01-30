@@ -12,15 +12,14 @@ function submit(e){
 	var lat = document.getElementById('lat').value;
 	var lng = document.getElementById('lng').value;
 
-	var state = document.getElementById('state').value;
 	var container = document.getElementById('root');
 	container.innerHTML = "";
-	getURL(lat, lng, state);
+	getURL(lat, lng);
 }
 
-function getURL(lat, lng, state){
+function getURL(lat, lng){
 	var request = new XMLHttpRequest();
-	var url = `${apiUrl}reps?&lat=${lat}&long=${lng}&state=${state}`;
+	var url = `${apiUrl}reps?&lat=${lat}&long=${lng}`;
 
 	request.open("GET", url);
 	request.addEventListener("load", onLoad);
