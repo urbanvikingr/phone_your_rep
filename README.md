@@ -6,4 +6,4 @@ npm i
 npm run dev
 ```
 
-API at https://github.com/msimonborg/phone-your-rep-api
+API at https://github.com/phoneyourrep/phone-your-rep-api
