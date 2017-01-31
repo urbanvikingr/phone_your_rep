@@ -34,6 +34,7 @@ class Office extends React.Component {
 		var address = (this.props.office.address ? this.props.office.address : "" ) + (this.props.office.suit ? this.props.office.suit : "");
 		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
 		var building = (this.props.office.building ? this.props.office.building + ", " : "");
+    	var hours = (this.props.office.hours ? "Hours: " + this.props.office.hours : "Hours? Tell us on Twitter @phoneyourrep");
 
 		var togglePanel = this.props.togglePanel;
 		var officeId = this.props.officeId;
@@ -59,18 +60,25 @@ class Office extends React.Component {
                 </div>
 
                 <div className={"card-office-panel row " + isHidden}>
-					<div className="col-6 card-office-panel-phone">
-						<i className="fa fa-phone-square fa-icon fa-fw " aria-hidden="true"></i>
-						<p>
-							<a href={tel_link}>{this.props.office.phone}</a>
-						</p>
-					</div>
+					<div className="row">
+						<div className="col-6 card-office-panel-phone">
+							<i className="fa fa-phone-square fa-icon fa-fw " aria-hidden="true"></i>
+							<p>
+								<a href={tel_link}>{this.props.office.phone}</a>
+							</p>
+						</div>
 
-					<div className="col-6 card-office-panel-office ">
-						<i className="fa fa-building fa-icon fa-fw " aria-hidden="true"></i>
-						<p>{building}</p>
-						<p>{address}</p>
-						<p>{city}</p>
+						<div className="col-6 card-office-panel-office ">
+							<i className="fa fa-building fa-icon fa-fw " aria-hidden="true"></i>
+							<p>{building}</p>
+							<p>{address}</p>
+							<p>{city}</p>
+						</div>
+					</div>
+					<div className="row">
+						<div className="col-12">
+							<p>{hours}</p>
+						</div>
 					</div>
                 </div>
 			    <div className="spacer"></div>

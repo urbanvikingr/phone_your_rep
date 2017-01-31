@@ -6,8 +6,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = Object.assign({}, require('./webpack.config'),
   {
     output: {
-      path: path.join(__dirname, 'doc'),
-      filename: "bundle.js"
+      	path: path.join(__dirname, 'doc'),
+      	filename: "[name].js"
     },
     devtool: 'cheap-module-source-map',
     plugins: [
@@ -17,7 +17,7 @@ module.exports = Object.assign({}, require('./webpack.config'),
         }
       }),
       new CopyWebpackPlugin([
-		  
+
       ])
     ],
   }
