@@ -75,9 +75,9 @@ class Office extends React.Component {
 							<p>{city}</p>
 						</div>
 					</div>
-					<div className="row">
-						<div className="col-12">
-							<p>{hours}</p>
+					<div className="row card-office-panel-hours">
+						<div className="col-12 ">
+							<p className="font-white">{hours}</p>
 						</div>
 					</div>
                 </div>
