@@ -8,7 +8,7 @@ module.exports = {
 	},
     output: {
         path: path.resolve(__dirname, "doc"),
-		publicPath: "/doc/",
+		publicPath: "/docs/",
         filename: "[name].js"
     },
     module: {

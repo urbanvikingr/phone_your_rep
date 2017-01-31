@@ -1,6 +1,6 @@
 {
   "name": "phone-your-rep-web",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "front-end for the phone-your-rep application",
   "main": "index.js",
   "scripts": {
