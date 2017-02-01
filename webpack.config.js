@@ -34,9 +34,9 @@ module.exports = {
       filename: 'widget.html',
       template: './app/widget.ejs',
       chunks: ['widget']
-    }),
-    new CopyWebpackPlugin([
-      {from: 'app/CNAME'}
-    ])
+    })
+    // new CopyWebpackPlugin([
+    //   // {from: 'app/CNAME'}
+    // ])
   ]
 };
