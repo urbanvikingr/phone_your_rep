@@ -6,17 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Phone Your Rep</title>
-
-	<!-- HOW DO I FIX THIS -->
 	<link rel="icon" type="image/png" href="<%= require('./images/favicon.png') %>" />
 
 	<!-- Facebook Meta -->
 	<!-- Fix for Deployment -->
 	<meta property="og:url" content="http://www.phoneyourrep.com" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="{{official_full}}'s Contact Info'" />
-	<meta property="og:description" content="Download all of {{official_full}}'s' contact info straight to your phone. Then call them every day." />
-	<meta property="og:image" content="'../static/imgs/twitter_meta_card.png') %>" />
+	<meta property="og:title" content="Al Green's Contact Info'" />
+	<meta property="og:description" content="Download all of Al Green's' contact info straight to your phone. Then call them every day." />
+	<meta property="og:image" content="<%= require('./images/twitter_meta_card.png') %>" />
 	<meta property="fb:app_id" content="1666802596950475" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@phoneyourrep" />
@@ -65,56 +63,83 @@
 
 
 				<div data-reactroot="" class="row card-list">
-					<div class="col-12 center">
+					<div class="col-12 center card-animation-start ">
 						<div class="card row">
 							<div class="col-4">
-								<img class="card-photo" src="{{photo}}">
+								<img class="card-photo" src="https://theunitedstates.io/images/congress/450x550/G000553.jpg">
 
 								<div class="card-social">
-									{{{socialLink "" url "fa-desktop"}}}
-									{{{socialLink "https://www.youtube.com/user/" youtube "fa-youtube-play"}}}
-									{{{socialLink "https://www.twitter.com/" twiter "fa-twitter"}}}
-									{{{socialLink "https://www.facebook.com/" facebook "fa-facebook"}}}
-									{{{socialLink "https://www.instagram.com/" instagram "fa-instagram"}}}
+									<a class="card-link" href="http://algreen.house.gov" target="_blank"><i class="fa fa-icon fa-desktop" aria-hidden="true"></i></a>
+									<a class="card-link" href="https://www.youtube.com/user/RepAlGreen" target="_blank"><i class="fa fa-icon fa-youtube-play" aria-hidden="true"></i></a>
+
+									<a class="card-link" href="https://www.facebook.com/repalgreen" target="_blank"><i class="fa fa-icon fa-facebook" aria-hidden="true"></i></a>
+
 								</div>
 							</div>
 							<div class="col-8">
 								<div class="card-name">
-									<h3 class="card-member">{{official_full}}</h3>
-									<p class="card-chamber">{{role}}</p>
+									<h3 class="card-member">Al Green</h3>
+									<p class="card-chamber">United States Representative</p>
 								</div>
 								<div class="card-office-list">
-									{{#each office_locations}}
 										<div class="card-office">
 											<div class="card-office-btn">
 												<div class="card-office-btn-office"><i class="fa fa-caret-up fa-white card-office-btn-caret" aria-hidden="true"></i>
 													<h1 class="card-office-btn-name font-white">
-														{{city}}
+														Washington
 													</h1>
 												</div>
-												<div class="card-office-btn-link"><a class="font-white" href="{{v_card_link}}"><i class="fa fa-arrow-circle-o-down fa-white" aria-hidden="true"></i>Download contact</a></div>
+												<div class="card-office-btn-link"><a class="font-white" href="https://phone-your-rep.herokuapp.com/v_cards/135"><i class="fa fa-arrow-circle-o-down fa-white" aria-hidden="true"></i>Download contact</a></div>
 												<div class="spacer"></div>
 											</div>
-											<div class="card-office-panel row">
+											<div class="card-office-panel row hidden">
 												<div class="row">
 													<div class="col-6 card-office-panel-phone"><i class="fa fa-phone-square fa-icon fa-fw " aria-hidden="true"></i>
-														<p><a href="tel:{{phone}}">{{phone}}</a></p>
+														<p><a href="tel:202-225-7508">202-225-7508</a></p>
 													</div>
 													<div class="col-6 card-office-panel-office "><i class="fa fa-building fa-icon fa-fw " aria-hidden="true"></i>
-														<p>{{ifNull building}}</p>
-														<p>{{address}} {{suite}}</p>
-														<p>{{city}}{{state}}{{zip}}</p>
+														<p></p>
+														<p>2347 Rayburn HOB </p>
+														<p>WashingtonDC20515-4309</p>
 													</div>
 												</div>
 												<div class="row card-office-panel-hours">
 													<div class="col-12 ">
-														<p class="font-white">Hours: {{hours}}</p>
+														<p class="font-white">Hours: </p>
 													</div>
 												</div>
 											</div>
 											<div class="spacer"></div>
 										</div>
-									{{/each}}
+										<div class="card-office">
+											<div class="card-office-btn">
+												<div class="card-office-btn-office"><i class="fa fa-caret-up fa-white card-office-btn-caret" aria-hidden="true"></i>
+													<h1 class="card-office-btn-name font-white">
+														Houston
+													</h1>
+												</div>
+												<div class="card-office-btn-link"><a class="font-white" href="https://phone-your-rep.herokuapp.com/v_cards/1016"><i class="fa fa-arrow-circle-o-down fa-white" aria-hidden="true"></i>Download contact</a></div>
+												<div class="spacer"></div>
+											</div>
+											<div class="card-office-panel row hidden">
+												<div class="row">
+													<div class="col-6 card-office-panel-phone"><i class="fa fa-phone-square fa-icon fa-fw " aria-hidden="true"></i>
+														<p><a href="tel:713-383-9234">713-383-9234</a></p>
+													</div>
+													<div class="col-6 card-office-panel-office "><i class="fa fa-building fa-icon fa-fw " aria-hidden="true"></i>
+														<p></p>
+														<p>3003 South Loop West Suite 460</p>
+														<p>HoustonTX77054</p>
+													</div>
+												</div>
+												<div class="row card-office-panel-hours">
+													<div class="col-12 ">
+														<p class="font-white">Hours: M-F 9AM-5PM CST</p>
+													</div>
+												</div>
+											</div>
+											<div class="spacer"></div>
+										</div>
 								</div>
 							</div>
 						</div>

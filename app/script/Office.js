@@ -8,7 +8,7 @@ export default class Office extends React.Component {
 		var address = (this.props.office.address ? this.props.office.address : "" ) + (this.props.office.suit ? this.props.office.suit : "");
 		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
 		var building = (this.props.office.building ? this.props.office.building + ", " : "");
-    	var hours = (this.props.office.hours ? "Hours: " + this.props.office.hours : "Hours: ?? Let us know on Twitter @phoneyourrep");
+    	var hours = (this.props.office.hours ? "Hours: " + this.props.office.hours : "Hours?: Let us know on Twitter @phoneyourrep");
 
 		var togglePanel = this.props.togglePanel;
 		var officeId = this.props.officeId;

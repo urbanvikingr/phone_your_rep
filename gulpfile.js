@@ -16,6 +16,17 @@ gulp.task('handlebars', function() {
 				}else{
 					return null;
 				}
+			},
+			thisURL : function(first, last){
+				var url = "https://www.phoneyourrep.com/reps/" + first.toLowerCase() + "_" + last.toLowerCase();
+				return url;
+			},
+			hours : function(hours){
+				if(hours){
+					return "Hours: " + hours;
+				}else{
+					return "Hours?: Let us know on Twitter @phoneyourrep")
+				}
 			}
 		}
 	}
