@@ -4,6 +4,8 @@ var rename = require('gulp-rename')
 var reps = require('./app/reps/reps.json')
 
 gulp.task('handlebars', function() {
+	
+
     for (var i = 0; i < reps.length; i++) {
         var rep = reps[i];
         var folderName = rep.first.toLowerCase() + '_' + rep.last.toLowerCase()
@@ -11,7 +13,7 @@ gulp.task('handlebars', function() {
 
 
 
-        gulp.src('app/templates/rep.handlebars')
+        return gulp.src('app/templates/rep.handlebars')
             .pipe(handlebars(rep))
             .pipe(rename('index.html'))
             .pipe(gulp.dest('docs/reps/' + folderName + '/'));

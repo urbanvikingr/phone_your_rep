@@ -12,8 +12,8 @@
 	<!-- Fix for Deployment -->
 	<meta property="og:url" content="http://www.phoneyourrep.com" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Phone Your Rep" />
-	<meta property="og:description" content="Download all of your representatives' contact info straight to your phone. Then call them every day." />
+	<meta property="og:title" content="{{official_full}}'s Contact Info'" />
+	<meta property="og:description" content="Download all of {{official_full}}'s' contact info straight to your phone. Then call them every day." />
 	<meta property="og:image" content="<%= require('./images/twitter_meta_card.png') %>" />
 	<meta property="fb:app_id" content="1666802596950475" />
 	<meta name="twitter:card" content="summary_large_image" />
@@ -67,6 +67,14 @@
 						<div class="card row">
 							<div class="col-4">
 								<img class="card-photo" src="{{photo}}">
+
+								<div class="card-social">
+									<a class="card-link" href="{{ifNull url}}" target="_blank"><i class="fa fa-icon fa-desktop" aria-hidden="true"></i></a>
+									<a class="card-link" href="https://www.youtube.com/user/kamalaharrisdotorg" target="_blank"><i class="fa fa-icon fa-youtube-play" aria-hidden="true"></i></a>
+									<a class="card-link" href="https://www.twitter.com/KamalaHarris" target="_blank"><i class="fa fa-icon fa-twitter" aria-hidden="true"></i></a>
+									<a class="card-link" href="https://www.facebook.com/KamalaHarris" target="_blank"><i class="fa fa-icon fa-facebook" aria-hidden="true"></i></a>
+									<a class="card-link" href="https://www.instagram.com/kamalaharris" target="_blank"><i class="fa fa-icon fa-instagram" aria-hidden="true"></i></a>
+								</div>
 							</div>
 							<div class="col-8">
 								<div class="card-name">
@@ -91,7 +99,7 @@
 														<p><a href="tel:{{phone}}">{{phone}}</a></p>
 													</div>
 													<div class="col-6 card-office-panel-office "><i class="fa fa-building fa-icon fa-fw " aria-hidden="true"></i>
-														<p>{{building}}</p>
+														<p>{{ifNull building}}</p>
 														<p>{{address}} {{suite}}</p>
 														<p>{{city}}{{state}}{{zip}}</p>
 													</div>
@@ -111,15 +119,6 @@
 					</div>
 				</div>
 
-
-
-
-
-
-
-
-
-
 			</div>
 		</div>
 	</div>
@@ -132,7 +131,6 @@
 
 	<!-- Handlebars -->
 	<script type="text/javascript">
-
 	</script>
 
 	<!-- reCAPTCHA  -->
