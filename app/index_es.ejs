@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Llama a tu Representante</title>
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdJJREFUeNrEkc9P1FAQx7997dLtbpft0tqWGELhImEhqQfONtG7Fw/e5CQnEv4DzsaDRz179MLBhOifwGYJP7ZyoRx0uyjSTReF/oDlPV/1ShRJjDN5mWTevM/7zgzwr21r6an2u3vyh8du/9HjlRsD0rsL3vbO7r0bATZfvnJYc/bJHWfSW19/7/01oF+rr/p7H9x2pwPf99darbZ2bUAxuGOwxeQ0hSyXEXYPta29/cVrAw7uP3CDIEAUHeOwF/IMBU1OH15VK12VPAoCTyQCGo0GNK0BIolILi6c1kZbo8GBE9X1we23b4rSgbD27PmLz5WqiyzTMgY3yzMEwT6USgUVfsIw5FFFVa1henoKlBIo1TLOzs5hxkcQJ5oL72R5xKEisceMOj59DGGP27AsE4IgQDcM5HkOxgCNK1JVFaP1X8D8+wDSxKSFXq+HEUnhRRRT/JcoilAuK7hlWuh0fDiOg1JJRpqlSJIMcfwNlm3i5CSBZNvjvEcJ9JLCMHTURlUeDTDuhq5zyeznJhgjICLBcDiEVBIxvGSYm5+BVPQsc3r3axf9OMJccx6KoiAexHws5zDGTFCurGihAAjcQYrlMdAvKYTl1xse/qf9EGAAr6Gxj7gIcSgAAAAASUVORK5CYII=" />
+  <link rel="icon" type="image/png" href="<%= require('./images/favicon.png') %>" />
 
 	<!-- Facebook Meta -->
 	<!-- Fix for Deployment -->
@@ -14,7 +14,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Phone Your Rep" />
 	<meta property="og:description" content="Download all of your representatives' contact info straight to your phone. Then call them every day." />
-  <meta property="og:image" content="2938b5c86ae1ce9974a8156144057bdc.png" />
+  <meta property="og:image" content="<%= require('./images/twitter_meta_card.png') %>" />
 	<meta property="fb:app_id" content="1666802596950475" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@phoneyourrep" />
@@ -22,7 +22,7 @@
 	<meta name="twitter:url" content="http://www.phoneyourrep.com" />
 	<meta name="twitter:title" content="Phone Your Rep" />
 	<meta name="twitter:description" content="Download all of your representatives' contact info straight to your phone. Then call them every day." />
-	<meta name="twitter:image" content="2938b5c86ae1ce9974a8156144057bdc.png" />
+	<meta name="twitter:image" content="<%= require('./images/twitter_meta_card.png') %>" />
 	<meta name="twitter:image:alt" content="U.S. Capitol" />
 
 	<!-- JQuery and Google Maps API-->
@@ -59,7 +59,7 @@
 			<div class="container">
 				<div class="row">
 					<div id="capitol" class="col-6">
-            <img src="d659a98dc28d30f04e54fbc8ce029f3b.png" alt="US Capitol" style="width: 100%">
+            <img src="<%= require('./images/uscapitol.png') %>" alt="US Capitol" style="width: 100%">
 					</div>
 
 					<div id="about" class="col-6">
@@ -113,6 +113,6 @@
     _intro_bar.account_id = '5890f4d409378';
 	</script>
 
-<script type="text/javascript" src="bundle.js"></script></body>
+</body>
 
 </html>

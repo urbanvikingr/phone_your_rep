@@ -1,13 +1,17 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
 import CardList from './CardList';
+import $ from 'jquery';
+import 'imports?jQuery=jquery!geocomplete';
 import './apiInfo';
-
+import '../styles';
+import '../styles/main.css';
 
 var apiData;
 
 document.getElementById("submit").addEventListener("click", submit);
 
-function submit(e){
+function submit(){
 
 	var lat = document.getElementById('lat').value;
 	var lng = document.getElementById('lng').value;
@@ -40,3 +44,9 @@ function onLoad(){
 function onError(){
 	console.log("Failure :(");
 }
+
+$(function () {
+  $("#address").geocomplete({
+    details: "form"
+  });
+});
