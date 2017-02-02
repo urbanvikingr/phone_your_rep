@@ -2,7 +2,8 @@ import React from 'react';
 import SocialLink from './SocialLink';
 import OfficeList from './OfficeList';
 import Portrait from './Portrait.js';
-import Name from './Name.js'
+import Name from './Name.js';
+import Share from "./Share.js";
 // Card component
 export default class Card extends React.Component {
     constructor() {
@@ -42,7 +43,7 @@ export default class Card extends React.Component {
 							<SocialLink type="google-plus" link={this.props.contact.googleplus}/>
 						</div>
 
-						<a href={url}>Share here</a>
+						<Share url={url} />
 					</div>
 					<div className="col-8">
 						<Name party={party} name={this.props.contact.official_full} chamber={this.props.contact.role}></Name>
