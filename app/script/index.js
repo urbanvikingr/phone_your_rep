@@ -30,10 +30,6 @@ function getURL(lat, lng){
 function onLoad(){
 	console.log("Success :)");
 	apiData = JSON.parse(this.response);
-	// Fixes US House of Representatives STATE-District to US House
-	apiData.forEach((card) => {
-		if(card.role.substring(0, 28) == "United States Representative"){ card.role = "United States Representative";}
-	});
 
 	// Render Card List!
 	ReactDOM.render(

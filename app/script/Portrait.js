@@ -1,15 +1,36 @@
 import React from 'react';
-import networkMap from './constants';
 
 
-export default class SocialLink extends React.Component {
+export default class Portrait extends React.Component {
+	constructor(){
+		super();
+		this.state = {
+			link : ""
+		}
+	}
+
+	componentDidMount(){
+		this.testImage(this.props.link)
+	}
+
+	testImage(URL){
+		var test = new Image();
+		test.onload=this.imageFound.bind(this);
+		test.onerror=this.imageNotFound.bind(this);
+		test.src=URL
+	}
+
+	imageFound(){
+		this.setState({link : this.props.link})
+	}
+
+	imageNotFound(){
+		this.setState({link: "./static/img/person.png"})
+	}
 
 	render() {
-		if(!this.errored){
-			return (<img className="card-photo" src={this.props.link}/>)
-		}
-		else{
-			return (<img className="card-photo" src="./person.png"/>)
-		}
+
+			return (<img className="card-photo" src={this.state.link}/>)
+
   	}
 };
