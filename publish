@@ -5,4 +5,4 @@ git diff-index --quiet --cached HEAD && git diff-files --quiet
 npm run build
 git add ./docs/
 git commit -m "publishing `git rev-parse HEAD`"
-git push origin publish
+git push origin master
