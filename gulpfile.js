@@ -4,7 +4,18 @@ var rename = require('gulp-rename')
 var reps = require('./app/reps/reps.json')
 
 gulp.task('handlebars', function() {
-	
+	var options = {
+		helpers: {
+			ifNull : function(str){
+				if (str == null){
+					return "howdy";
+				}
+				else{
+					return str;
+				}
+			}
+		}
+	}
 
     for (var i = 0; i < reps.length; i++) {
         var rep = reps[i];
