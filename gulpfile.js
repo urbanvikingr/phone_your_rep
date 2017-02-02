@@ -1,17 +1,20 @@
 var gulp = require('gulp')
 var handlebars = require('gulp-compile-handlebars')
 var rename = require('gulp-rename')
-var reps = require('./app/reps/reps.json')
+var reps = require('./app/generate-reps/reps.json')
 
 gulp.task('handlebars', function() {
 	var options = {
 		helpers: {
 			ifNull : function(str){
-				if (str == null){
-					return "howdy";
-				}
-				else{
-					return str;
+				if(str) { return str }
+				else { return null }
+			},
+			socialLink : function(baseUrl, url, icon){
+				if(url){
+					return '<a class="card-link" href="' + baseUrl + url + '" target="_blank"><i class="fa fa-icon ' + icon + '" aria-hidden="true"></i></a>';
+				}else{
+					return null;
 				}
 			}
 		}
@@ -21,13 +24,13 @@ gulp.task('handlebars', function() {
         var rep = reps[i];
         var folderName = rep.first.toLowerCase() + '_' + rep.last.toLowerCase()
 
+		console.log(folderName);
 
 
-
-        return gulp.src('app/templates/rep.handlebars')
-            .pipe(handlebars(rep))
+        gulp.src('app/generate-reps/templates/rep.handlebars')
+            .pipe(handlebars(rep, options))
             .pipe(rename('index.html'))
-            .pipe(gulp.dest('docs/reps/' + folderName + '/'));
+            .pipe(gulp.dest('app/generate-reps/reps/' + folderName + '/'));
     }
 });
 

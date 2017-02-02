@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Phone Your Rep</title>
+
+	<!-- HOW DO I FIX THIS -->
 	<link rel="icon" type="image/png" href="<%= require('./images/favicon.png') %>" />
 
 	<!-- Facebook Meta -->
@@ -14,7 +16,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="{{official_full}}'s Contact Info'" />
 	<meta property="og:description" content="Download all of {{official_full}}'s' contact info straight to your phone. Then call them every day." />
-	<meta property="og:image" content="<%= require('./images/twitter_meta_card.png') %>" />
+	<meta property="og:image" content="'../static/imgs/twitter_meta_card.png') %>" />
 	<meta property="fb:app_id" content="1666802596950475" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@phoneyourrep" />
@@ -63,17 +65,17 @@
 
 
 				<div data-reactroot="" class="row card-list">
-					<div class="col-12 center card-animation-start ">
+					<div class="col-12 center">
 						<div class="card row">
 							<div class="col-4">
 								<img class="card-photo" src="{{photo}}">
 
 								<div class="card-social">
-									<a class="card-link" href="https://www.harris.senate.gov/" target="_blank"><i class="fa fa-icon fa-desktop" aria-hidden="true"></i></a>
-									<a class="card-link" href="https://www.youtube.com/user/kamalaharrisdotorg" target="_blank"><i class="fa fa-icon fa-youtube-play" aria-hidden="true"></i></a>
-									<a class="card-link" href="https://www.twitter.com/KamalaHarris" target="_blank"><i class="fa fa-icon fa-twitter" aria-hidden="true"></i></a>
-									<a class="card-link" href="https://www.facebook.com/KamalaHarris" target="_blank"><i class="fa fa-icon fa-facebook" aria-hidden="true"></i></a>
-									<a class="card-link" href="https://www.instagram.com/kamalaharris" target="_blank"><i class="fa fa-icon fa-instagram" aria-hidden="true"></i></a>
+									{{{socialLink "" url "fa-desktop"}}}
+									{{{socialLink "https://www.youtube.com/user/" youtube "fa-youtube-play"}}}
+									{{{socialLink "https://www.twitter.com/" twiter "fa-twitter"}}}
+									{{{socialLink "https://www.facebook.com/" facebook "fa-facebook"}}}
+									{{{socialLink "https://www.instagram.com/" instagram "fa-instagram"}}}
 								</div>
 							</div>
 							<div class="col-8">
@@ -93,7 +95,7 @@
 												<div class="card-office-btn-link"><a class="font-white" href="{{v_card_link}}"><i class="fa fa-arrow-circle-o-down fa-white" aria-hidden="true"></i>Download contact</a></div>
 												<div class="spacer"></div>
 											</div>
-											<div class="card-office-panel row hidden">
+											<div class="card-office-panel row">
 												<div class="row">
 													<div class="col-6 card-office-panel-phone"><i class="fa fa-phone-square fa-icon fa-fw " aria-hidden="true"></i>
 														<p><a href="tel:{{phone}}">{{phone}}</a></p>
