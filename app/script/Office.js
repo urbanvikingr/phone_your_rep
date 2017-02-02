@@ -26,7 +26,7 @@ export default class Office extends React.Component {
 					</div>
 					<div className="card-office-btn-link">
 						<a className="font-white" href={this.props.office.v_card_link}>
-							<i className="fa fa-arrow-circle-o-down fa-white" aria-hidden="true"></i>
+							<i className="fa fa-address-card fa-white" aria-hidden="true"></i>
 							{" Download contact"}
 						</a>
 					</div>

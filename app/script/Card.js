@@ -25,13 +25,14 @@ export default class Card extends React.Component {
     render() {
         var contact = this.props.contacts;
         var party = this.props.contact.party.charAt(0);
+		var url = "https://www.phoneyourrep.com/reps/" + this.props.contact.first.toLowerCase() + "_" + this.props.contact.last.toLowerCase();
 
         return (
 			<div className={"col-12 center " + this.state.animation + " " + this.state.hidden}>
 				<div className="card row">
 					<div className="col-4">
 						<Portrait link={this.props.contact.photo}></Portrait>
-						
+
 						<div className="card-social">
 							<SocialLink type="web" link={this.props.contact.url}/>
 							<SocialLink type="youtube" link={this.props.contact.youtube}/>
@@ -40,6 +41,8 @@ export default class Card extends React.Component {
 							<SocialLink type="instagram" link={this.props.contact.instagram}/>
 							<SocialLink type="google-plus" link={this.props.contact.googleplus}/>
 						</div>
+
+						<a href={url}>Share here</a>
 					</div>
 					<div className="col-8">
 						<Name party={party} name={this.props.contact.official_full} chamber={this.props.contact.role}></Name>
@@ -47,7 +50,6 @@ export default class Card extends React.Component {
 						<OfficeList offices={this.props.contact.office_locations} ></OfficeList>
 
 					</div>
-
 				</div>
 			</div>
         );
