@@ -1,4 +1,5 @@
 var gulp = require('gulp')
+var concat = require('gulp-concat')
 var handlebars = require('gulp-compile-handlebars')
 var rename = require('gulp-rename')
 var reps = require('./app/generate-reps/reps.json')
@@ -25,7 +26,7 @@ gulp.task('handlebars', function() {
 				if(hours){
 					return "Hours: " + hours;
 				}else{
-					return "Hours?: Let us know on Twitter @phoneyourrep")
+					return "Hours?: Let us know on Twitter @phoneyourrep"
 				}
 			}
 		}
@@ -41,8 +42,15 @@ gulp.task('handlebars', function() {
         gulp.src('app/generate-reps/templates/rep.handlebars')
             .pipe(handlebars(rep, options))
             .pipe(rename('index.html'))
-            .pipe(gulp.dest('app/generate-reps/reps/' + folderName + '/'));
+            .pipe(gulp.dest('docs/reps/' + folderName + '/'));
     }
+
+	gulp.src('app/generate-reps/css/*.css')
+		.pipe(concat('reps.css'))
+		.pipe(gulp.dest('docs/reps'))
+
+	gulp.src('app/images/*')
+		.pipe(gulp.dest('docs/reps/images'))
 });
 
 
