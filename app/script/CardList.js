@@ -15,9 +15,8 @@ export default class CardList extends React.Component {
 		});
 		return (
 			<div className="row card-list">
-			{cards}
+				{cards}
 			</div>
-
 		);
 	}
 }
