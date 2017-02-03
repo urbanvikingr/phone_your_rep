@@ -26,7 +26,7 @@ export default class Card extends React.Component {
     render() {
         var contact = this.props.contacts;
         var party = this.props.contact.party.charAt(0);
-		var url = "https://www.phoneyourrep.com/reps/" + this.props.contact.first.toLowerCase() + "_" + this.props.contact.last.toLowerCase();
+		var url = "http://www.phoneyourrep.com/reps/" + this.props.contact.first.toLowerCase() + "_" + this.props.contact.last.toLowerCase();
 
         return (
 			<div className={"col-12 center " + this.state.animation + " " + this.state.hidden}>
