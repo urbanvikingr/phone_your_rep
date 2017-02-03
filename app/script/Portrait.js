@@ -25,7 +25,7 @@ export default class Portrait extends React.Component {
 	}
 
 	imageNotFound(){
-		this.setState({link: "./static/img/person.png"})
+		this.setState({link: "./app/images/person.png"})
 	}
 
 	render() {
