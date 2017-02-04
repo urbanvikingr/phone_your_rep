@@ -1,6 +1,6 @@
 # Phone Your Rep
 
-![Capital Building](http://www.phoneyourrep.com/static/img/uscapitol.png)
+![Capital Building](http://www.phoneyourrep.com/static/img/uscapitol.png)
 
 ### Call Local. Call Often.
 
