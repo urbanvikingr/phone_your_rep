@@ -40,9 +40,18 @@ module.exports = {
             filename: 'widget.html',
             template: './app/widget.ejs',
             chunks: ['widget']
-        })
+        }),
+        new CopyWebpackPlugin([
+          {from: 'app/styles/reset.css'}
+        ]),
+        new CopyWebpackPlugin([
+          {from: 'app/styles/simple-grid.css'}
+        ]),
+        new CopyWebpackPlugin([
+          {from: 'app/styles/main.css'}
+        ])
         // new CopyWebpackPlugin([
-        //   // {from: 'app/CNAME'}
+          // {from: 'app/CNAME'}
         // ])
     ]
 };
