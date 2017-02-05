@@ -49,9 +49,9 @@ module.exports = {
         ]),
         new CopyWebpackPlugin([
           {from: 'app/styles/main.css'}
+        ]),
+        new CopyWebpackPlugin([
+          {from: 'CNAME'}
         ])
-        // new CopyWebpackPlugin([
-          // {from: 'app/CNAME'}
-        // ])
     ]
 };
