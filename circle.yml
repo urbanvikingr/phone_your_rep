@@ -6,3 +6,9 @@ dependencies:
   override:
     - npm install --no-optional
     - npm run build
+
+deployment:
+  s3:
+    branch: circle-s3-deploy
+    commands:
+      - npm run s3-deploy
