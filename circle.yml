@@ -9,6 +9,6 @@ dependencies:
 
 deployment:
   s3:
-    branch: circle-s3-deploy
+    branch: master
     commands:
       - npm run s3-deploy
