@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.production.js --bail -p --progress --colors && gulp",
-    "publish": "./publish",
     "s3-deploy": "./node_modules/.bin/s3-deploy './docs/**' --cwd './docs' --region 'us-east-1' --bucket 'www.phoneyourrep.com'",
     "test": "echo \"Error: no test specified\" && exit 0",
     "dev": "webpack-dev-server --progress --colors"
