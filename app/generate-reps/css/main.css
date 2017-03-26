@@ -20,17 +20,23 @@ nav{
 .wrapper{
 	min-height: 95%;
     background: #f4f5f6;
-	padding-bottom: 8rem;
 }
 footer{
-	min-height: 5%;
 	background-color: #30415D;
 }
-footer a{
-	display: block;
+.footer-info{
+	padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 2px solid #fff;
+}
+.footer-links{
 	text-align: center;
-	font-size: 2rem;
-	padding-top: .5rem;
+}
+.footer-icon{
+	font-size: 3rem;
+}
+.footer-icon:hover{
+	color: #d2d2d2;
 }
 
 @media only screen and (min-width: 60em) {
@@ -143,6 +149,7 @@ footer a{
 	display: none;
 }
 .card-office-btn{
+	position: relative;
 	border: none;
 	outline: none;
 
@@ -163,14 +170,20 @@ footer a{
 	color: #000;
 }
 .card-office-btn-link{
-	float: right;
-	color: #000;
-	text-decoration: none;
-	font-family: "Lato", sans-serif;
-	font-style: italic;
+	position: absolute;
+    color: #000;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
     font-size: 1rem;
-	padding-top: .5rem;
-    padding-right: .5rem;
+    right: 0;
+    top: 0;
+    width: 4rem;
+    height: 100%;
+    background: #CF6766;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-office-panel{
 	box-sizing: border-box;
@@ -300,14 +313,13 @@ footer a{
 		margin: .5rem 0 0 0 !important;
 	}
 	.card-office-btn-office{
-    cursor: pointer;
+    	cursor: pointer;
 		display: inline-block;
 		text-align: center;
 	}
 	.card-office-btn-link{
 		float: none;
 		padding-right: 0;
-		padding-top: 1rem;
 		font-size: 1rem;
 		text-decoration: underline;
 	}

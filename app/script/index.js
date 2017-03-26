@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Select from 'react-select';
 import CardList from './CardList';
-import Directory from './Directory';
+// import Directory from './Directory';
+import Reps from './reps';
+
 import $ from 'jquery';
 import 'imports?jQuery=jquery!geocomplete';
 import './apiInfo';
@@ -13,15 +15,10 @@ var apiData;
 
 document.getElementById("submit").addEventListener("click", submit);
 
-/* For Directory
-
-ReactDOM.render(
-    <Directory/>,
-	document.getElementById("directory")
-)
-
-*/
-
+// ReactDOM.render(
+//     <Directory reps={Reps} />,
+// 	document.getElementById("directory")
+// )
 
 
 

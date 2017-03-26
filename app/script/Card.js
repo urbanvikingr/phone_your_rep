@@ -10,7 +10,7 @@ export default class Card extends React.Component {
         super();
         this.state = {
             animation: "",
-            "hidden": "hidden"
+            "hidden": "hidden-opacity"
         };
     }
 
