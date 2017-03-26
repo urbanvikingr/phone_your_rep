@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Select from 'react-select';
 import CardList from './CardList';
-import Directory from './Directory';
+// import Directory from './Directory';
 import Reps from './reps';
 
 import $ from 'jquery';
@@ -15,10 +15,10 @@ var apiData;
 
 document.getElementById("submit").addEventListener("click", submit);
 
-ReactDOM.render(
-    <Directory reps={Reps} />,
-	document.getElementById("directory")
-)
+// ReactDOM.render(
+//     <Directory reps={Reps} />,
+// 	document.getElementById("directory")
+// )
 
 
 

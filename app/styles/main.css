@@ -257,10 +257,10 @@ footer{
 }
 
 .footer-info{
-    margin-top: 10rem;
+    /*margin-top: 10rem;*/
 	padding-top: 2rem;
     padding-bottom: 2rem;
-    border-top: 2px solid #fff;
+    /*border-top: 2px solid #fff;*/
 }
 .footer-links{
 	text-align: center;
