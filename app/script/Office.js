@@ -13,23 +13,22 @@ export default class Office extends React.Component {
 		var togglePanel = this.props.togglePanel;
 		var officeId = this.props.officeId;
 		var isHidden = (this.props.toggleOfficeId == officeId) ? "" : "hidden";
-		var caret = (this.props.toggleOfficeId == officeId) ? "fa fa-caret-down fa-white card-office-btn-caret" :  "fa fa-caret-up fa-white card-office-btn-caret"
+		var caret = (this.props.toggleOfficeId == officeId) ? "fa fa-minus fa-white card-office-btn-caret" :  "fa fa-plus fa-white card-office-btn-caret"
 
         return (
             <div className="card-office">
-				<div className="card-office-btn" onClick={function(e){
-					togglePanel(officeId);
-				}}>
+				<div className="card-office-btn" onClick={function(e){ togglePanel(officeId); }}>
 					<div className="card-office-btn-office">
 						<i className={caret} aria-hidden="true"></i>
 						<h1 className="card-office-btn-name font-white">{office}</h1>
 					</div>
-					<div className="card-office-btn-link">
-						<a className="font-white" href={this.props.office.v_card_link}>
-							<i className="fa fa-address-card fa-white" aria-hidden="true"></i>
-							{" Download contact"}
-						</a>
-					</div>
+
+					<a className="font-white" href={this.props.office.v_card_link}>
+						<div className="card-office-btn-link">
+							<i className="fa fa-download fa-white" aria-hidden="true"></i>
+						</div>
+					</a>
+
 				    <div className="spacer"></div>
                 </div>
 
