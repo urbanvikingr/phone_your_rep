@@ -227,29 +227,6 @@
     "instagram_id": null,
     "office_locations": [
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/B000944-lorain",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/B000944",
-        "active": true,
-        "office_id": "B000944-lorain",
-        "bioguide_id": "B000944",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "200 W. Erie Ave.",
-        "suite": "Suite 312",
-        "city": "Lorain",
-        "state": "OH",
-        "zip": "44052",
-        "phone": "440-242-4100",
-        "fax": "440-242-4108",
-        "hours": "",
-        "latitude": 41.4685695,
-        "longitude": -82.1792684,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000944-lorain",
-        "downloads": 9,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000944_lorain.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/B000944-cleveland",
         "rep": "https://phone-your-rep.herokuapp.com/reps/B000944",
         "active": true,
@@ -269,8 +246,31 @@
         "latitude": 41.4964399,
         "longitude": -81.6975439,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000944-cleveland",
-        "downloads": 39,
+        "downloads": 40,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000944_cleveland.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/B000944-lorain",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/B000944",
+        "active": true,
+        "office_id": "B000944-lorain",
+        "bioguide_id": "B000944",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "200 W. Erie Ave.",
+        "suite": "Suite 312",
+        "city": "Lorain",
+        "state": "OH",
+        "zip": "44052",
+        "phone": "440-242-4100",
+        "fax": "440-242-4108",
+        "hours": "",
+        "latitude": 41.4685695,
+        "longitude": -82.1792684,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000944-lorain",
+        "downloads": 10,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000944_lorain.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/B000944-columbus",
@@ -292,7 +292,7 @@
         "latitude": 39.9666883,
         "longitude": -83.000974,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000944-columbus",
-        "downloads": 36,
+        "downloads": 37,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000944_columbus.png"
       },
       {
@@ -2964,7 +2964,7 @@
         "latitude": 40.4376694,
         "longitude": -79.9974916,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001070-pittsburgh",
-        "downloads": 44,
+        "downloads": 45,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001070_pittsburgh.png"
       },
       {
