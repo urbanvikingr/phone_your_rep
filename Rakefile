@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 desc 'Update app/generate-reps/reps.json raw data file from API'
 task :update_reps do
   sh "curl 'https://phone-your-rep.herokuapp.com/reps' -o\
