@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rake update_reps
 set -e
 git diff-index --quiet --cached HEAD && git diff-files --quiet
 npm run build
