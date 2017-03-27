@@ -54,7 +54,7 @@
 	<div class="wrapper">
 		<nav style="position:relative; background-image: url('../images/header.png')">
 			<!-- Fix for Deployment -->
-			<a href="https://www.phoneyourrep.com/" id="logo">Phone Your Rep</a>
+			<a href="http://www.phoneyourrep.com/" id="logo">Phone Your Rep</a>
 		</nav>
 
 		<div class="body-content">
@@ -83,7 +83,7 @@
 								<div class="card-office-list">
 										<div class="card-office">
 											<div class="card-office-btn">
-												<div class="card-office-btn-office"><i class="fa fa-caret-up fa-white card-office-btn-caret" aria-hidden="true"></i>
+												<div class="card-office-btn-office"><i class="fa fa-plus fa-white card-office-btn-caret" aria-hidden="true"></i>
 													<h1 class="card-office-btn-name font-white">
 														Phoenix
 													</h1>
@@ -114,7 +114,7 @@
 										</div>
 										<div class="card-office">
 											<div class="card-office-btn">
-												<div class="card-office-btn-office"><i class="fa fa-caret-up fa-white card-office-btn-caret" aria-hidden="true"></i>
+												<div class="card-office-btn-office"><i class="fa fa-plus fa-white card-office-btn-caret" aria-hidden="true"></i>
 													<h1 class="card-office-btn-name font-white">
 														Washington
 													</h1>
@@ -176,12 +176,12 @@
 					$(this).addClass("hidden")
 				})
 
-				$(".card").find(".fa-caret-down").removeClass("fa-caret-down").addClass("fa-caret-up")
+				$(".card").find(".fa-minus").removeClass("fa-minus").addClass("fa-plus")
 
 				//If it was hidden, reveal it
 				if(hidden) {
 					$(this).parent(".card-office").children(".card-office-panel").removeClass("hidden")
-					$(this).parent(".card-office").find(".fa-caret-up").removeClass("fa-caret-up").addClass("fa-caret-down")
+					$(this).parent(".card-office").find(".fa-plus").removeClass("fa-plus").addClass("fa-minus")
 				}
 			})
 		});
