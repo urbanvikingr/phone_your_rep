@@ -22,6 +22,10 @@ gulp.task('handlebars', function() {
 				var url = "https://www.phoneyourrep.com/reps/" + first.toLowerCase() + "_" + last.toLowerCase();
 				return url;
 			},
+      partyInitial : function(party){
+        var initial = party.charAt(0);
+        return initial.toLowerCase();
+      },
 			hours : function(hours){
 				if(hours){
 					return "Hours: " + hours;
