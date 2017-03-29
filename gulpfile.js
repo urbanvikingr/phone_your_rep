@@ -32,7 +32,14 @@ gulp.task('handlebars', function() {
 				}else{
 					return "Hours?: Let us know on Twitter @phoneyourrep"
 				}
-			}
+			},
+      photo : function(photo){
+        if(photo){
+          return photo;
+        }else{
+          return "../images/person.png"
+        }
+      }
 		}
 	}
 
