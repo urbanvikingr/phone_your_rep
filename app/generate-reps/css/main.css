@@ -315,8 +315,6 @@ footer{
 	}
 	.card-office-btn-office{
     	cursor: pointer;
-		display: inline-block;
-		text-align: center;
 	}
 	.card-office-btn-link{
 		float: none;
