@@ -174,7 +174,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.alexander.senate.gov/public/index.cfm?p=Email",
-    "url": "https://www.alexander.senate.gov/public/index.cfm/home",
+    "url": "https://www.alexander.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/A000360.jpg",
     "twitter": "SenAlexander",
     "facebook": "senatorlamaralexander",
@@ -734,7 +734,7 @@
         "latitude": 34.068627,
         "longitude": -117.270925,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000371-san_bernardino",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000371_san_bernardino.png"
       }
     ]
@@ -1459,7 +1459,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.blunt.senate.gov/public/index.cfm/contact-roy",
-    "url": "http://www.blunt.senate.gov/public",
+    "url": "https://www.blunt.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/B000575.jpg",
     "twitter": "RoyBlunt",
     "facebook": "SenatorBlunt",
@@ -1795,7 +1795,7 @@
         "latitude": 39.1007745,
         "longitude": -84.5120256,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000944-cincinnati",
-        "downloads": 34,
+        "downloads": 35,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000944_cincinnati.png"
       },
       {
@@ -1818,7 +1818,7 @@
         "latitude": 41.4964399,
         "longitude": -81.6975439,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000944-cleveland",
-        "downloads": 50,
+        "downloads": 51,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000944_cleveland.png"
       },
       {
@@ -1889,7 +1889,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.burr.senate.gov/contact/email",
-    "url": "http://www.burr.senate.gov",
+    "url": "https://www.burr.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/B001135.jpg",
     "twitter": "SenatorBurr",
     "facebook": "SenatorRichardBurr",
@@ -2388,7 +2388,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.boozman.senate.gov/public/index.cfm/contact",
-    "url": "https://www.boozman.senate.gov/public/index.cfm/home",
+    "url": "https://www.boozman.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/B001236.jpg",
     "twitter": "JohnBoozman",
     "facebook": "JohnBoozman",
@@ -2512,7 +2512,7 @@
         "latitude": 34.7456872,
         "longitude": -92.2865752,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001236-little_rock",
-        "downloads": 13,
+        "downloads": 14,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001236_little_rock.png"
       },
       {
@@ -3317,7 +3317,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.barrasso.senate.gov/public/index.cfm/contact-form",
-    "url": "http://www.barrasso.senate.gov",
+    "url": "https://www.barrasso.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/B001261.jpg",
     "twitter": "SenJohnBarrasso",
     "facebook": "johnbarrasso",
@@ -4376,7 +4376,7 @@
         "latitude": 41.1749972,
         "longitude": -73.1931954,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001277-bridgeport",
-        "downloads": 14,
+        "downloads": 15,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001277_bridgeport.png"
       },
       {
@@ -4399,7 +4399,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001277-capitol",
-        "downloads": 23,
+        "downloads": 24,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001277_capitol.png"
       },
       {
@@ -4422,7 +4422,7 @@
         "latitude": 41.7665316,
         "longitude": -72.6719747,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001277-hartford",
-        "downloads": 34,
+        "downloads": 36,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001277_hartford.png"
       }
     ]
@@ -5227,7 +5227,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.booker.senate.gov/?p=contact",
-    "url": "http://www.booker.senate.gov",
+    "url": "https://www.booker.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/B001288.jpg",
     "twitter": "senbookeroffice",
     "facebook": null,
@@ -5305,7 +5305,7 @@
         "latitude": 40.7344571,
         "longitude": -74.1657213,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001288-newark",
-        "downloads": 28,
+        "downloads": 29,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001288_newark.png"
       }
     ]
@@ -7347,7 +7347,7 @@
         "latitude": 47.6045895,
         "longitude": -122.3354608,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000127-seattle",
-        "downloads": 76,
+        "downloads": 77,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000127_seattle.png"
       },
       {
@@ -7980,7 +7980,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.cochran.senate.gov/public/index.cfm/email-me",
-    "url": "http://www.cochran.senate.gov",
+    "url": "https://www.cochran.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/C000567.jpg",
     "twitter": "SenThadCochran",
     "facebook": null,
@@ -8300,8 +8300,8 @@
     "middle": "D.",
     "nickname": null,
     "suffix": null,
-    "contact_form": "http://www.crapo.senate.gov/contact/email.cfm",
-    "url": "http://www.crapo.senate.gov",
+    "contact_form": "https://www.crapo.senate.gov/contact",
+    "url": "https://www.crapo.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/C000880.jpg",
     "twitter": "MikeCrapo",
     "facebook": "mikecrapo",
@@ -8628,7 +8628,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.collins.senate.gov/contact",
-    "url": "https://www.collins.senate.gov",
+    "url": "http://www.collins.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/C001035.jpg",
     "twitter": "SenatorCollins",
     "facebook": "susancollins",
@@ -8930,7 +8930,7 @@
         "latitude": 42.329238,
         "longitude": -71.095479,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001037-roxbury_crossing",
-        "downloads": 5,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001037_roxbury_crossing.png"
       }
     ]
@@ -10886,7 +10886,7 @@
         "latitude": 40.6010783,
         "longitude": -75.4749998,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001070-allentown",
-        "downloads": 26,
+        "downloads": 27,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001070_allentown.png"
       },
       {
@@ -11072,7 +11072,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.corker.senate.gov/public/index.cfm/emailme",
-    "url": "http://www.corker.senate.gov",
+    "url": "https://www.corker.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/C001071.jpg",
     "twitter": "SenBobCorker",
     "facebook": "bobcorker",
@@ -11353,7 +11353,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.cassidy.senate.gov/contact",
-    "url": "http://www.cassidy.senate.gov",
+    "url": "https://www.cassidy.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/C001075.jpg",
     "twitter": null,
     "facebook": null,
@@ -12928,7 +12928,7 @@
         "latitude": 34.7456872,
         "longitude": -92.2865752,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001095-little_rock",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001095_little_rock.png"
       },
       {
@@ -13668,7 +13668,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001105-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001105_capitol.png"
       },
       {
@@ -13691,7 +13691,7 @@
         "latitude": 39.0191653,
         "longitude": -77.3782613,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001105-sterling",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001105_sterling.png"
       },
       {
@@ -13714,7 +13714,7 @@
         "latitude": 39.185574,
         "longitude": -78.1625238,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001105-winchester",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001105_winchester.png"
       }
     ]
@@ -14500,7 +14500,7 @@
         "office_type": "capitol",
         "distance": null,
         "building": null,
-        "address": "B40A Dirksen Senate Office Building",
+        "address": "204 Russell Senate Office Building",
         "suite": null,
         "city": "Washington",
         "state": "DC",
@@ -15345,7 +15345,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.durbin.senate.gov/contact/",
-    "url": "http://www.durbin.senate.gov",
+    "url": "https://www.durbin.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/D000563.jpg",
     "twitter": "SenatorDurbin",
     "facebook": "SenatorDurbin",
@@ -15423,7 +15423,7 @@
         "latitude": 41.8784454,
         "longitude": -87.63,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000563-chicago",
-        "downloads": 157,
+        "downloads": 158,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_chicago.png"
       },
       {
@@ -15844,7 +15844,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.donnelly.senate.gov/contact/email-joe",
-    "url": "http://www.donnelly.senate.gov",
+    "url": "https://www.donnelly.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/D000607.jpg",
     "twitter": "SenDonnelly",
     "facebook": "senatordonnelly",
@@ -17064,7 +17064,7 @@
         "latitude": 40.090932,
         "longitude": -88.2501244,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000619-champaign",
-        "downloads": 2,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000619_champaign.png"
       },
       {
@@ -17477,7 +17477,7 @@
         "latitude": 41.8784454,
         "longitude": -87.63,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000622-chicago",
-        "downloads": 12,
+        "downloads": 13,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000622_chicago.png"
       }
     ]
@@ -18374,7 +18374,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.enzi.senate.gov/public/index.cfm/contact?p=e-mail-senator-enzi",
-    "url": "http://www.enzi.senate.gov",
+    "url": "https://www.enzi.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/E000285.jpg",
     "twitter": "SenatorEnzi",
     "facebook": "mikeenzi",
@@ -18693,7 +18693,7 @@
         "latitude": 41.6706549,
         "longitude": -72.7867265,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/E000293-new_britain",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/E000293_new_britain.png"
       }
     ]
@@ -18804,7 +18804,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.ernst.senate.gov/public/index.cfm/contact",
-    "url": "http://www.ernst.senate.gov/public",
+    "url": "https://www.ernst.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/E000295.jpg",
     "twitter": "SenJoniErnst",
     "facebook": "senjoniernst",
@@ -19152,6 +19152,69 @@
     ]
   },
   {
+    "self": "https://phone-your-rep.herokuapp.com/reps/E000298",
+    "state": {
+      "self": "https://phone-your-rep.herokuapp.com/api/beta/states/20",
+      "state_code": "20",
+      "name": "Kansas",
+      "abbr": "KS"
+    },
+    "district": {
+      "self": "https://phone-your-rep.herokuapp.com/api/beta/districts/2004",
+      "full_code": "2004",
+      "code": "04",
+      "state_code": "20"
+    },
+    "active": true,
+    "bioguide_id": "E000298",
+    "official_full": "Ron Estes",
+    "role": "United States Representative",
+    "party": "Republican",
+    "senate_class": null,
+    "last": "Estes",
+    "first": "Ron",
+    "middle": null,
+    "nickname": null,
+    "suffix": null,
+    "contact_form": "https://estes.house.gov/contact/email",
+    "url": "https://estes.house.gov",
+    "photo": null,
+    "twitter": "RepRonEstes",
+    "facebook": "RepRonEstes",
+    "youtube": null,
+    "instagram": null,
+    "googleplus": null,
+    "twitter_id": null,
+    "facebook_id": null,
+    "youtube_id": null,
+    "instagram_id": null,
+    "office_locations": [
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/E000298-capitol",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/E000298",
+        "active": true,
+        "office_id": "E000298-capitol",
+        "bioguide_id": "E000298",
+        "office_type": "capitol",
+        "distance": null,
+        "building": null,
+        "address": "2452 Rayburn House Office Building",
+        "suite": null,
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20515-1604",
+        "phone": "202-225-6216",
+        "fax": null,
+        "hours": null,
+        "latitude": 38.8870651,
+        "longitude": -77.0105254,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/E000298-capitol",
+        "downloads": 0,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/E000298_capitol.png"
+      }
+    ]
+  },
+  {
     "self": "https://phone-your-rep.herokuapp.com/reps/F000062",
     "state": {
       "self": "https://phone-your-rep.herokuapp.com/api/beta/states/06",
@@ -19171,7 +19234,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.feinstein.senate.gov/public/index.cfm/e-mail-me",
-    "url": "http://www.feinstein.senate.gov",
+    "url": "https://www.feinstein.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/F000062.jpg",
     "twitter": "SenFeinstein",
     "facebook": "senatorfeinstein",
@@ -19203,7 +19266,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-capitol",
-        "downloads": 98,
+        "downloads": 100,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_capitol.png"
       },
       {
@@ -19249,7 +19312,7 @@
         "latitude": 34.0476223,
         "longitude": -118.444656,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-los_angeles",
-        "downloads": 254,
+        "downloads": 259,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_los_angeles.png"
       },
       {
@@ -19272,7 +19335,7 @@
         "latitude": 32.7143481,
         "longitude": -117.1647085,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-san_diego",
-        "downloads": 97,
+        "downloads": 98,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_san_diego.png"
       },
       {
@@ -19295,7 +19358,7 @@
         "latitude": 37.7887748,
         "longitude": -122.4026656,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-san_francisco",
-        "downloads": 268,
+        "downloads": 269,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_san_francisco.png"
       }
     ]
@@ -19406,7 +19469,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.flake.senate.gov/public/index.cfm/contact-jeff",
-    "url": "http://www.flake.senate.gov/public",
+    "url": "https://www.flake.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/F000444.jpg",
     "twitter": "JeffFlake",
     "facebook": "senatorjeffflake",
@@ -19461,7 +19524,7 @@
         "latitude": 33.5098565,
         "longitude": -112.0338808,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000444-phoenix",
-        "downloads": 58,
+        "downloads": 59,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000444_phoenix.png"
       },
       {
@@ -20662,7 +20725,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.fischer.senate.gov/public/index.cfm/contact",
-    "url": "http://www.fischer.senate.gov",
+    "url": "https://www.fischer.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/F000463.jpg",
     "twitter": "SenatorFischer",
     "facebook": "senatordebfischer",
@@ -21394,7 +21457,7 @@
         "latitude": 32.8060149,
         "longitude": -79.8879337,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000359-mt__pleasant",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000359_mt__pleasant.png"
       },
       {
@@ -21551,7 +21614,7 @@
     "nickname": "Chuck",
     "suffix": null,
     "contact_form": "http://www.grassley.senate.gov/contact",
-    "url": "http://www.grassley.senate.gov",
+    "url": "https://www.grassley.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/G000386.jpg",
     "twitter": "ChuckGrassley",
     "facebook": "grassley",
@@ -22501,7 +22564,7 @@
         "latitude": 42.655222,
         "longitude": -73.7492819,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-albany",
-        "downloads": 35,
+        "downloads": 36,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_albany.png"
       },
       {
@@ -22616,7 +22679,7 @@
         "latitude": 40.7707877,
         "longitude": -73.4102476,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-melville",
-        "downloads": 34,
+        "downloads": 35,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_melville.png"
       },
       {
@@ -22639,7 +22702,7 @@
         "latitude": 40.7550353,
         "longitude": -73.9718588,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-new_york",
-        "downloads": 221,
+        "downloads": 224,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_new_york.png"
       },
       {
@@ -23867,7 +23930,7 @@
         "latitude": 21.3036893,
         "longitude": -157.862353,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000571-honolulu",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000571_honolulu.png"
       }
     ]
@@ -24204,7 +24267,7 @@
     "contact_form": null,
     "url": "https://gaetz.house.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/G000578.jpg",
-    "twitter": "Rep_Matt_Gaetz",
+    "twitter": "RepMattGaetz",
     "facebook": "CongressmanMattGaetz",
     "youtube": null,
     "instagram": "Congressman_Matt_Gaetz",
@@ -25337,7 +25400,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.heller.senate.gov/public/index.cfm/contact-form",
-    "url": "http://www.heller.senate.gov/public",
+    "url": "https://www.heller.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/H001041.jpg",
     "twitter": "SenDeanHeller",
     "facebook": "SenDeanHeller",
@@ -25675,7 +25738,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.heinrich.senate.gov/contact",
-    "url": "http://www.heinrich.senate.gov",
+    "url": "https://www.heinrich.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/H001046.jpg",
     "twitter": "MartinHeinrich",
     "facebook": "MartinHeinrich",
@@ -27396,7 +27459,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.heitkamp.senate.gov/public/index.cfm/contact",
-    "url": "http://www.heitkamp.senate.gov/public",
+    "url": "https://www.heitkamp.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/H001069.jpg",
     "twitter": "SenatorHeitkamp",
     "facebook": "SenatorHeidiHeitkamp",
@@ -27784,7 +27847,7 @@
         "latitude": 34.7651263,
         "longitude": -92.3397715,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001072-little_rock",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001072_little_rock.png"
       }
     ]
@@ -28105,7 +28168,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-capitol",
-        "downloads": 83,
+        "downloads": 84,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_capitol.png"
       },
       {
@@ -28197,7 +28260,7 @@
         "latitude": 32.7182014,
         "longitude": -117.1587103,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-san_diego",
-        "downloads": 56,
+        "downloads": 57,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_san_diego.png"
       },
       {
@@ -28220,7 +28283,7 @@
         "latitude": 37.7804298,
         "longitude": -122.4144643,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-san_francisco",
-        "downloads": 123,
+        "downloads": 124,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_san_francisco.png"
       }
     ]
@@ -28266,7 +28329,7 @@
         "office_type": "capitol",
         "distance": null,
         "building": null,
-        "address": "B85 Russell Senate Office Building",
+        "address": "330 Hart Senate Office Building",
         "suite": null,
         "city": "Washington",
         "state": "DC",
@@ -28457,7 +28520,7 @@
     "nickname": "Jim",
     "suffix": null,
     "contact_form": "https://www.inhofe.senate.gov/contact",
-    "url": "http://www.inhofe.senate.gov",
+    "url": "https://www.inhofe.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/I000024.jpg",
     "twitter": "InhofePress",
     "facebook": "jiminhofe",
@@ -28724,7 +28787,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/I000056-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/I000056_capitol.png"
       },
       {
@@ -30709,7 +30772,7 @@
         "latitude": 40.6785193,
         "longitude": -73.4556272,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000210-massapequa_park",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000210_massapequa_park.png"
       }
     ]
@@ -31939,7 +32002,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.king.senate.gov/contact",
-    "url": "http://www.king.senate.gov",
+    "url": "https://www.king.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/K000383.jpg",
     "twitter": "SenAngusKing",
     "facebook": "SenatorAngusSKingJr",
@@ -32088,7 +32151,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.kaine.senate.gov/contact",
-    "url": "http://www.kaine.senate.gov",
+    "url": "https://www.kaine.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/K000384.jpg",
     "twitter": "SenKaineOffice",
     "facebook": "SenatorKaine",
@@ -32962,7 +33025,7 @@
     },
     "active": true,
     "bioguide_id": "K000390",
-    "official_full": "Ruben Kihuen",
+    "official_full": "Ruben J. Kihuen",
     "role": "United States Representative",
     "party": "Democrat",
     "senate_class": null,
@@ -33283,6 +33346,29 @@
     "instagram_id": null,
     "office_locations": [
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/K000393-alexandria",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/K000393",
+        "active": true,
+        "office_id": "K000393-alexandria",
+        "bioguide_id": "K000393",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "6501 Coliseum Blvd",
+        "suite": "Suite 700A",
+        "city": "Alexandria",
+        "state": "LA",
+        "zip": "71303",
+        "phone": "318-445-2892",
+        "fax": "",
+        "hours": "",
+        "latitude": 31.2934776,
+        "longitude": -92.5156529,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000393-alexandria",
+        "downloads": 0,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000393_alexandria.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/K000393-capitol",
         "rep": "https://phone-your-rep.herokuapp.com/reps/K000393",
         "active": true,
@@ -33291,7 +33377,7 @@
         "office_type": "capitol",
         "distance": null,
         "building": null,
-        "address": "B11 Russell Senate Office Building",
+        "address": "383 Russell Senate Office Building",
         "suite": null,
         "city": "Washington",
         "state": "DC",
@@ -33304,6 +33390,52 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000393-capitol",
         "downloads": 16,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000393_capitol.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/K000393-lafayette",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/K000393",
+        "active": true,
+        "office_id": "K000393-lafayette",
+        "bioguide_id": "K000393",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "101 La Rue France",
+        "suite": "Suite 503",
+        "city": "Lafayette",
+        "state": "LA",
+        "zip": "70508",
+        "phone": "337-269-5980",
+        "fax": "",
+        "hours": "",
+        "latitude": 30.1948666,
+        "longitude": -92.014654,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000393-lafayette",
+        "downloads": 0,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000393_lafayette.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/K000393-monroe",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/K000393",
+        "active": true,
+        "office_id": "K000393-monroe",
+        "bioguide_id": "K000393",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "1651 Louisville Avenue",
+        "suite": "Suite 108",
+        "city": "Monroe",
+        "state": "LA",
+        "zip": "71201",
+        "phone": "318-361-1489",
+        "fax": "",
+        "hours": "",
+        "latitude": 32.5175209,
+        "longitude": -92.1087384,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000393-monroe",
+        "downloads": 0,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000393_monroe.png"
       }
     ]
   },
@@ -33772,7 +33904,7 @@
         "latitude": 41.0270474,
         "longitude": -73.7647888,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000480-white_plains",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000480_white_plains.png"
       }
     ]
@@ -34013,7 +34145,7 @@
         "latitude": 37.7784791,
         "longitude": -122.2250837,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000551-oakland-1",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000551_oakland_1.png"
       },
       {
@@ -34271,7 +34403,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000559-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000559_capitol.png"
       },
       {
@@ -34294,7 +34426,7 @@
         "latitude": 41.6944274,
         "longitude": -71.4705546,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000559-warwick",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000559_warwick.png"
       }
     ]
@@ -35992,7 +36124,7 @@
         "latitude": 38.9527935,
         "longitude": -121.0815891,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000578-auburn",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000578_auburn.png"
       },
       {
@@ -36038,7 +36170,7 @@
         "latitude": 39.5034549,
         "longitude": -121.540378,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000578-oroville",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000578_oroville.png"
       },
       {
@@ -37082,7 +37214,7 @@
         "latitude": 40.7674409,
         "longitude": -73.9203228,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000087-astoria",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000087_astoria.png"
       },
       {
@@ -37098,7 +37230,7 @@
         "suite": "",
         "city": "Brooklyn",
         "state": "NY",
-        "zip": "11211-222",
+        "zip": "11211-2228",
         "phone": "718-349-5972",
         "fax": "212-860-0704",
         "hours": "Tuesday 9:00am – 5:00pm",
@@ -37176,7 +37308,7 @@
     "nickname": "Ed",
     "suffix": null,
     "contact_form": "https://www.markey.senate.gov/contact",
-    "url": "http://www.markey.senate.gov",
+    "url": "https://www.markey.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/M000133.jpg",
     "twitter": "SenMarkey",
     "facebook": "EdJMarkey",
@@ -37302,7 +37434,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.mccain.senate.gov/public/index.cfm/contact-form",
-    "url": "http://www.mccain.senate.gov",
+    "url": "https://www.mccain.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/M000303.jpg",
     "twitter": "SenJohnMcCain",
     "facebook": "johnmccain",
@@ -37560,7 +37692,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.mcconnell.senate.gov/public/index.cfm?p=contact",
-    "url": "http://www.mcconnell.senate.gov",
+    "url": "https://www.mcconnell.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/M000355.jpg",
     "twitter": "McConnellPress",
     "facebook": "mitchmcconnell",
@@ -37858,7 +37990,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.moran.senate.gov/public/index.cfm/e-mail-jerry",
-    "url": "http://www.moran.senate.gov",
+    "url": "https://www.moran.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/M000934.jpg",
     "twitter": "JerryMoran",
     "facebook": "jerrymoran",
@@ -38030,7 +38162,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.murray.senate.gov/public/index.cfm/contactme",
-    "url": "http://www.murray.senate.gov/public",
+    "url": "https://www.murray.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/M001111.jpg",
     "twitter": "PattyMurray",
     "facebook": null,
@@ -39651,7 +39783,7 @@
         "latitude": 41.7559191,
         "longitude": -72.6646397,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001169-hartford",
-        "downloads": 16,
+        "downloads": 17,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001169_hartford.png"
       }
     ]
@@ -40571,7 +40703,7 @@
     "nickname": null,
     "suffix": "III",
     "contact_form": "http://www.manchin.senate.gov/public/index.cfm/contact-form",
-    "url": "http://www.manchin.senate.gov/public",
+    "url": "https://www.manchin.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/M001183.jpg",
     "twitter": "Sen_JoeManchin",
     "facebook": "JoeManchinIII",
@@ -43082,7 +43214,7 @@
         "latitude": 28.546165,
         "longitude": -81.3744028,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-orlando",
-        "downloads": 52,
+        "downloads": 53,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_orlando.png"
       },
       {
@@ -44834,7 +44966,7 @@
     "nickname": "Rob",
     "suffix": null,
     "contact_form": "https://www.portman.senate.gov/public/index.cfm/contact?p=contact-form",
-    "url": "http://www.portman.senate.gov",
+    "url": "https://www.portman.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/P000449.jpg",
     "twitter": "SenRobPortman",
     "facebook": "senrobportman",
@@ -44912,7 +45044,7 @@
         "latitude": 41.5047711,
         "longitude": -81.6917985,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000449-cleveland",
-        "downloads": 87,
+        "downloads": 88,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000449_cleveland.png"
       },
       {
@@ -47404,7 +47536,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.perdue.senate.gov/connect/email",
-    "url": "http://www.perdue.senate.gov",
+    "url": "https://www.perdue.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/P000612.jpg",
     "twitter": "sendavidperdue",
     "facebook": "SenatorDavidPerdue",
@@ -47448,7 +47580,7 @@
         "office_type": "capitol",
         "distance": null,
         "building": null,
-        "address": "383 Russell Senate Office Building",
+        "address": "455 Russell Senate Office Building",
         "suite": null,
         "city": "Washington",
         "state": "DC",
@@ -47734,7 +47866,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000122-capitol",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000122_capitol.png"
       },
       {
@@ -47757,7 +47889,7 @@
         "latitude": 41.7566184,
         "longitude": -71.4607281,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000122-cranston",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000122_cranston.png"
       },
       {
@@ -47780,7 +47912,7 @@
         "latitude": 41.8262057,
         "longitude": -71.4109836,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000122-providence",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000122_providence.png"
       }
     ]
@@ -47805,7 +47937,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.roberts.senate.gov/public/?p=EmailPat",
-    "url": "http://www.roberts.senate.gov",
+    "url": "https://www.roberts.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/R000307.jpg",
     "twitter": "SenPatRoberts",
     "facebook": "SenPatRoberts",
@@ -49036,7 +49168,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000578-capitol",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000578_capitol.png"
       },
       {
@@ -49457,7 +49589,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.risch.senate.gov/public/index.cfm?p=Email",
-    "url": "http://www.risch.senate.gov",
+    "url": "https://www.risch.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/R000584.jpg",
     "twitter": "SenatorRisch",
     "facebook": null,
@@ -49914,7 +50046,7 @@
         "latitude": 41.0476588,
         "longitude": -81.7276415,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000586-wadsworth",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000586_wadsworth.png"
       }
     ]
@@ -50421,7 +50553,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.rubio.senate.gov/public/index.cfm/contact",
-    "url": "http://www.rubio.senate.gov",
+    "url": "https://www.rubio.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/R000595.jpg",
     "twitter": "SenRubioPress",
     "facebook": "SenatorMarcoRubio",
@@ -51505,7 +51637,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.rounds.senate.gov/contact/email-mike",
-    "url": "http://www.rounds.senate.gov",
+    "url": "https://www.rounds.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/R000605.jpg",
     "twitter": "SenatorRounds",
     "facebook": "SenatorMikeRounds",
@@ -52265,7 +52397,7 @@
         "latitude": 42.6551387,
         "longitude": -73.749201,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000148-albany",
-        "downloads": 23,
+        "downloads": 24,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000148_albany.png"
       },
       {
@@ -52357,7 +52489,7 @@
         "latitude": 40.7708436,
         "longitude": -73.4078757,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000148-melville",
-        "downloads": 21,
+        "downloads": 22,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000148_melville.png"
       },
       {
@@ -52818,7 +52950,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.shelby.senate.gov/public/index.cfm/emailsenatorshelby",
-    "url": "http://www.shelby.senate.gov",
+    "url": "https://www.shelby.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/S000320.jpg",
     "twitter": "SenShelby",
     "facebook": "RichardShelby",
@@ -53667,7 +53799,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.stabenow.senate.gov/?p=contact",
-    "url": "http://www.stabenow.senate.gov",
+    "url": "https://www.stabenow.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/S000770.jpg",
     "twitter": "SenStabenow",
     "facebook": null,
@@ -53946,7 +54078,7 @@
         "latitude": 42.0466618,
         "longitude": -87.6829625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001145-evanston",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001145_evanston.png"
       },
       {
@@ -56690,7 +56822,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.schatz.senate.gov/contact",
-    "url": "http://www.schatz.senate.gov",
+    "url": "https://www.schatz.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/S001194.jpg",
     "twitter": "SenBrianSchatz",
     "facebook": "SenBrianSchatz",
@@ -57080,7 +57212,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.sasse.senate.gov/public/index.cfm/email-ben",
-    "url": "http://www.sasse.senate.gov/public",
+    "url": "https://www.sasse.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/S001197.jpg",
     "twitter": "SenSasse",
     "facebook": "SenatorSasse",
@@ -57229,7 +57361,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.sullivan.senate.gov/contact/email",
-    "url": "http://www.sullivan.senate.gov",
+    "url": "https://www.sullivan.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/S001198.jpg",
     "twitter": "SenDanSullivan",
     "facebook": "SenDanSullivan",
@@ -57681,8 +57813,8 @@
     "middle": null,
     "nickname": null,
     "suffix": null,
-    "contact_form": null,
-    "url": null,
+    "contact_form": "https://www.strange.senate.gov/content/contact-senator",
+    "url": "https://www.strange.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/S001202.jpg",
     "twitter": "SenatorStrange",
     "facebook": null,
@@ -57703,7 +57835,7 @@
         "office_type": "capitol",
         "distance": null,
         "building": null,
-        "address": "G-12 Dirksen Senate Office Building",
+        "address": "326 Russell Senate Office Building",
         "suite": null,
         "city": "Washington",
         "state": "DC",
@@ -58307,7 +58439,7 @@
     "nickname": "Pat",
     "suffix": null,
     "contact_form": "https://www.toomey.senate.gov/?p=contact",
-    "url": "http://www.toomey.senate.gov",
+    "url": "https://www.toomey.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/T000461.jpg",
     "twitter": "SenToomey",
     "facebook": "senatortoomey",
@@ -58697,7 +58829,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.tester.senate.gov/?p=email_senator",
-    "url": "http://www.tester.senate.gov",
+    "url": "https://www.tester.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/T000464.jpg",
     "twitter": "SenatorTester",
     "facebook": "senatortester",
@@ -59856,7 +59988,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.tillis.senate.gov/public/index.cfm/email-me",
-    "url": "https://www.tillis.senate.gov/public/index.cfm/home",
+    "url": "https://www.tillis.senate.gov/public",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/T000476.jpg",
     "twitter": "senthomtillis",
     "facebook": "SenatorThomTillis",
@@ -60175,7 +60307,7 @@
         "latitude": 43.0900861,
         "longitude": -75.2786079,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000478-new_hartford",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000478_new_hartford.png"
       }
     ]
@@ -60309,7 +60441,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "https://www.tomudall.senate.gov/?p=contact",
-    "url": "http://www.tomudall.senate.gov",
+    "url": "https://www.tomudall.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/U000039.jpg",
     "twitter": "SenatorTomUdall",
     "facebook": "senatortomudall",
@@ -62377,7 +62509,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000802-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000802_capitol.png"
       },
       {
@@ -62400,7 +62532,7 @@
         "latitude": 41.8235873,
         "longitude": -71.4113021,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000802-providence",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000802_providence.png"
       }
     ]
@@ -62557,7 +62689,7 @@
     "nickname": null,
     "suffix": null,
     "contact_form": "http://www.warner.senate.gov/public/index.cfm?p=Contact",
-    "url": "http://www.warner.senate.gov",
+    "url": "https://www.warner.senate.gov",
     "photo": "https://phoneyourrep.github.io/images/congress/450x550/W000805.jpg",
     "twitter": "MarkWarner",
     "facebook": "MarkRWarner",
@@ -64643,7 +64775,7 @@
         "office_type": "capitol",
         "distance": null,
         "building": null,
-        "address": "B33 Russell Senate Office Building",
+        "address": "400 Russell Senate Office Building",
         "suite": null,
         "city": "Washington",
         "state": "DC",
