@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactTooltip from 'react-tooltip';
 
 export default class Office extends React.Component {
     render() {
@@ -24,9 +24,10 @@ export default class Office extends React.Component {
 					</div>
 
 					<a className="font-white" href={this.props.office.v_card_link}>
-						<div className="card-office-btn-link">
+						<div className="card-office-btn-link" data-tip="Add to Contact List">
 							<i className="fa fa-download fa-white" aria-hidden="true"></i>
 						</div>
+						<ReactTooltip />
 					</a>
 
 				    <div className="spacer"></div>

@@ -161,7 +161,8 @@ footer{
 .card-office-btn-caret{
 	float: left;
 	padding-left: .5rem;
-    font-size: 2rem;
+    font-size: 1rem;
+    padding-top: .5rem;
 }
 .card-office-btn-name{
 	float: left;
@@ -314,8 +315,6 @@ footer{
 	}
 	.card-office-btn-office{
     	cursor: pointer;
-		display: inline-block;
-		text-align: center;
 	}
 	.card-office-btn-link{
 		float: none;

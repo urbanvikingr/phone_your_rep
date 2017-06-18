@@ -65,12 +65,12 @@
 					<div class="col-12 center">
 						<div class="card row">
 							<div class="col-4">
-								<img class="card-photo" src="{{photo}}">
+								<img class="card-photo" src="{{photo photo}}">
 
 								<div class="card-social">
 									{{{socialLink "" url "fa-desktop"}}}
 									{{{socialLink "https://www.youtube.com/user/" youtube "fa-youtube-play"}}}
-									{{{socialLink "https://www.twitter.com/" twiter "fa-twitter"}}}
+									{{{socialLink "https://www.twitter.com/" twitter "fa-twitter"}}}
 									{{{socialLink "https://www.facebook.com/" facebook "fa-facebook"}}}
 									{{{socialLink "https://www.instagram.com/" instagram "fa-instagram"}}}
 								</div>
@@ -79,6 +79,7 @@
 								<div class="card-name">
 									<h3 class="card-member">{{official_full}}</h3>
 									<p class="card-chamber">{{role}}</p>
+                  <img class="card-party" src="../images/{{partyInitial party}}.png"></img>
 								</div>
 								<div class="card-office-list">
 									{{#each office_locations}}
@@ -102,7 +103,7 @@
 													<div class="col-6 card-office-panel-office "><i class="fa fa-building fa-icon fa-fw " aria-hidden="true"></i>
 														<p>{{ifNull building}}</p>
 														<p>{{address}} {{suite}}</p>
-														<p>{{city}}{{state}}{{zip}}</p>
+														<p>{{city}}, {{state}}, {{zip}}</p>
 													</div>
 												</div>
 												<div class="row card-office-panel-hours">
