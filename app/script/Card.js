@@ -25,7 +25,14 @@ export default class Card extends React.Component {
     }
     render() {
         var contact = this.props.contacts;
-        var party = this.props.contact.party.charAt(0);
+        var partyInitial = this.props.contact.party.charAt(0);
+        function party(partyInitial){
+          if (partyInitial != "R" && partyInitial != "D") {
+            return "I"
+          }else{
+            return partyInitial
+          }
+        };
 		var url = "http://www.phoneyourrep.com/reps/" + this.props.contact.first.toLowerCase() + "_" + this.props.contact.last.toLowerCase();
 
         return (
@@ -46,7 +53,7 @@ export default class Card extends React.Component {
 						<Share url={url} />
 					</div>
 					<div className="col-8">
-						<Name party={party} name={this.props.contact.official_full} chamber={this.props.contact.role}></Name>
+						<Name party={party(partyInitial)} name={this.props.contact.official_full} chamber={this.props.contact.role}></Name>
 
 						<OfficeList offices={this.props.contact.office_locations} ></OfficeList>
 
