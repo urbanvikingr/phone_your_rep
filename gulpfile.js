@@ -23,8 +23,12 @@ gulp.task('handlebars', function() {
 				return url;
 			},
       partyInitial : function(party){
-        var initial = party.charAt(0);
-        return initial.toLowerCase();
+        var initial = party.charAt(0).toLowerCase();
+        if(initial != "r" && initial != "d") {
+          return "i";
+        }else{
+          return initial;
+        }
       },
 			hours : function(hours){
 				if(hours){
