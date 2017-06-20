@@ -3,7 +3,7 @@ import Card from './Card';
 
 export default class CardList extends React.Component {
 	render() {
-		const cards = this.props.data.map((contact,i ) => {
+		const cards = this.props.data.reps.map((contact,i ) => {
 			return (
 				<Card
 				key={i}

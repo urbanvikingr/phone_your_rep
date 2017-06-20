@@ -43,8 +43,8 @@ gulp.task('handlebars', function() {
 		}
 	}
 
-    for (var i = 0; i < reps.length; i++) {
-        var rep = reps[i];
+    for (var i = 0; i < reps.reps.length; i++) {
+        var rep = reps.reps[i];
         var folderName = rep.first.toLowerCase() + '_' + rep.last.toLowerCase()
 
 		console.log(folderName);

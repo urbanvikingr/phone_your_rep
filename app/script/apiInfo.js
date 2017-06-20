@@ -1,1 +1,1 @@
-global.apiUrl = "https://phone-your-rep.herokuapp.com/"
+global.apiUrl = "https://phone-your-rep.herokuapp.com/api/beta/"
