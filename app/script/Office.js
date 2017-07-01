@@ -5,7 +5,8 @@ export default class Office extends React.Component {
     render() {
 		var office = this.props.office.city;
 		var tel_link = "tel:" + this.props.office.phone;
-		var address = (this.props.office.address ? this.props.office.address : "" ) + (this.props.office.suit ? this.props.office.suit : "");
+		var address = (this.props.office.address ? this.props.office.address : "" );
+    var suite = (this.props.office.suite ? this.props.office.suite : "")
 		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
 		var building = (this.props.office.building ? this.props.office.building + ", " : "");
     	var hours = (this.props.office.hours ? "Hours: " + this.props.office.hours : "Hours?: Let us know on Twitter @phoneyourrep");
@@ -46,6 +47,7 @@ export default class Office extends React.Component {
 							<i className="fa fa-building fa-icon fa-fw " aria-hidden="true"></i>
 							<p>{building}</p>
 							<p>{address}</p>
+              <p>{suite}</p>
 							<p>{city}</p>
 						</div>
 					</div>
