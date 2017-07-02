@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Select from 'react-select';
 import CardList from './CardList';
 // import Directory from './Directory';
-import Reps from './reps';
 
 import $ from 'jquery';
 import 'imports?jQuery=jquery!geocomplete';
@@ -36,7 +35,15 @@ function submit() {
 
     var lat = document.getElementById('lat').value;
     var lng = document.getElementById('lng').value;
-    var url = `${apiUrl}reps?&lat=${lat}&long=${lng}`;
+    var lastName = document.getElementById('last_name').value;
+
+    var latParam = (lat != "" ? `lat=${lat}&` : "")
+    var lngParam = (lng != "" ? `long=${lng}&` : "")
+    var lastNameParam = (lastName != "" ? `last_name=${lastName}&` : "")
+
+    var url = `${apiUrl}reps?${latParam}${lngParam}${lastNameParam}`;
+
+    console.log("fetching data from " + url)
 
     getURL(url);
 }
