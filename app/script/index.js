@@ -35,15 +35,7 @@ function submit() {
 
     var lat = document.getElementById('lat').value;
     var lng = document.getElementById('lng').value;
-    var lastName = document.getElementById('last_name').value;
-
-    var latParam = (lat != "" ? `lat=${lat}&` : "")
-    var lngParam = (lng != "" ? `long=${lng}&` : "")
-    var lastNameParam = (lastName != "" ? `last_name=${lastName}&` : "")
-
-    var url = `${apiUrl}reps?${latParam}${lngParam}${lastNameParam}`;
-
-    console.log("fetching data from " + url)
+    var url = `${apiUrl}reps?&lat=${lat}&long=${lng}`;
 
     getURL(url);
 }
