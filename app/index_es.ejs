@@ -25,11 +25,6 @@
 	<meta name="twitter:image" content="http://www.phoneyourrep.com/<%= require('./images/twitter_meta_card.png') %>" />
 	<meta name="twitter:image:alt" content="U.S. Capitol" />
 
-	<!-- JQuery and Google Maps API-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN47V710PFxcFAGY3Gx6hipg7P3CWcQn8&libraries=places&v=3"></script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-
 	<!-- Fonts && Font Awesome -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans|Alfa+Slab+One" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -84,10 +79,18 @@
 							</p>
 
 							<div class="row">
-								<div class="col-8 form-address">
+								<div class="col-12 form-address">
 									<input name="address" type="text" id="address" class="form-input" placeholder="Tu dirección">
 									<input name="lat" type="hidden" id="lat" value="">
 									<input name="lng" type="hidden" id="lng" value="">
+								</div>
+                <div class="col-12 form-address"></div>
+                <p class="font-gray font-raleway form-label">
+                  O:
+                </p>
+
+                <div class="col-8 form-address">
+									<input name="last_name" type="text" id="last_name" class="form-input" placeholder="Apellido del representante">
 								</div>
 
 								<div class="col-4 form-search">
@@ -98,19 +101,42 @@
 					</div>
 				</div>
 
-				<div id="root">
+        <div id="root" class="row">
 
 				</div>
+
+
 			</div>
 		</div>
 	</div>
-	</div>
 
 	<footer>
-		<a href="https://github.com/kylebutts/phone_your_rep">
-			<i class="fa fa-github font-white icon" aria-hidden="true"></i>
-		</a>
+		<div class="container">
+			<!-- <div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="directory">
+
+				</div>
+				<div class="col-2"></div>
+			</div> -->
+			<div class="row footer-info">
+				<div class="col-12 footer-links">
+					<a href="https://github.com/phoneyourrep/">
+						<i class="fa fa-github font-white footer-icon" aria-hidden="true"></i>
+					</a>
+					<a href="https://twitter.com/phoneyourrep/" style="padding-left: 1rem;">
+						<i class="fa fa-twitter font-white footer-icon" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
 	</footer>
+
+	<!-- JQuery and Google Maps API-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN47V710PFxcFAGY3Gx6hipg7P3CWcQn8&libraries=places&v=3"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<!-- reCAPTCHA  -->
 	<!-- Product Hunt -->
