@@ -3,11 +3,11 @@ import ReactTooltip from 'react-tooltip';
 
 export default class Office extends React.Component {
     render() {
-		var office = this.props.office.city;
+		var office = (this.props.office.city ? this.props.office.city : this.props.office.office_type);
 		var tel_link = "tel:" + this.props.office.phone;
 		var address = (this.props.office.address ? this.props.office.address : "" );
     var suite = (this.props.office.suite ? this.props.office.suite : "")
-		var city = (this.props.office.city ? this.props.office.city + ", " : "") + this.props.office.state + ", " + this.props.office.zip;
+		var cityStateZip = (this.props.office.city ? this.props.office.city + ", " : "") + (this.props.office.state ? this.props.office.state + ", " : "") + (this.props.office.zip ? this.props.office.zip : "");
 		var building = (this.props.office.building ? this.props.office.building + ", " : "");
     	var hours = (this.props.office.hours ? "Hours: " + this.props.office.hours : "Hours?: Let us know on Twitter @phoneyourrep");
 
@@ -48,7 +48,7 @@ export default class Office extends React.Component {
 							<p>{building}</p>
 							<p>{address}</p>
               <p>{suite}</p>
-							<p>{city}</p>
+							<p>{cityStateZip}</p>
 						</div>
 					</div>
 					<div className="row card-office-panel-hours">
