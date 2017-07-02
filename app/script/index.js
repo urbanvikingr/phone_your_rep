@@ -11,7 +11,17 @@ import './apiInfo';
 import '../styles';
 import '../styles/main.css';
 
+const queryString = require('query-string');
+const parsedQueryString = queryString.parse(location.search);
+
 var apiData;
+
+if (parsedQueryString.rep) {
+  var rep = parsedQueryString.rep
+  var url = `${apiUrl}reps/${rep}`;
+
+  getURL(url)
+}
 
 document.getElementById("submit").addEventListener("click", submit);
 
@@ -26,16 +36,15 @@ function submit() {
 
     var lat = document.getElementById('lat').value;
     var lng = document.getElementById('lng').value;
-
-    var container = document.getElementById('root');
-    container.innerHTML = "";
-    getURL(lat, lng);
-}
-
-function getURL(lat, lng) {
-    var request = new XMLHttpRequest();
     var url = `${apiUrl}reps?&lat=${lat}&long=${lng}`;
 
+    getURL(url);
+}
+
+function getURL(url) {
+    var request = new XMLHttpRequest();
+    var container = document.getElementById('root');
+    container.innerHTML = "";
     request.open("GET", url);
     request.addEventListener("load", onLoad);
     request.addEventListener("error", onError);

@@ -33,7 +33,7 @@ export default class Card extends React.Component {
             return partyInitial
           }
         };
-		var url = "http://www.phoneyourrep.com/reps/" + this.props.contact.first.toLowerCase() + "_" + this.props.contact.last.toLowerCase();
+		var url = "http://www.phoneyourrep.com?rep=" + this.props.contact.official_id;
 
         return (
 			<div className={"col-12 center " + this.state.animation + " " + this.state.hidden}>
