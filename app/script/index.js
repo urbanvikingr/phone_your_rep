@@ -9,15 +9,15 @@ import 'imports?jQuery=jquery!geocomplete';
 import './apiInfo';
 import '../styles';
 import '../styles/main.css';
+import queryString from 'query-string';
 
-const queryString = require('query-string');
 const parsedQueryString = queryString.parse(location.search);
 
 var apiData;
 
-if (parsedQueryString.rep) {
-  var rep = parsedQueryString.rep
-  var url = `${apiUrl}reps/${rep}`;
+if (parsedQueryString.reps) {
+  var reps = parsedQueryString.reps
+  var url = `${apiUrl}reps?official_ids=${reps}`;
 
   getURL(url)
 }
