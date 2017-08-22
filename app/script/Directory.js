@@ -46,7 +46,7 @@ export default class Directory extends React.Component {
       return contact.official_full.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
     })
     let hidden = this.state.focus ? "" : "hidden"
-    let queryString = this.state.selected && !this.state.focus ? `/reps?official_ids=${this.state.selected.official_id}` : "javascript:void(0)"
+    let queryString = this.state.selected && !this.state.focus ? `reps?official_ids=${this.state.selected.official_id}` : "javascript:void(0)"
 
     return (
       <div className="directory">
