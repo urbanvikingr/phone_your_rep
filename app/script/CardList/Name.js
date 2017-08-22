@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function SocialLink(props) {
   return (
@@ -9,7 +9,7 @@ export default function SocialLink(props) {
       <p className="card-chamber">
         {props.chamber}
       </p>
-      <img className="card-party" src={require('../../images/' + props.party.toLowerCase() + '.png')}></img>
+      <img className="card-party" src={require('../../images/' + props.partyInitial.toLowerCase() + '.png')}></img>
     </div>
-  );
-};
+  )
+}

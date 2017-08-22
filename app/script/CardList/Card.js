@@ -1,63 +1,56 @@
-import React from 'react';
-import SocialLink from './SocialLink';
-import OfficeList from './OfficeList';
-import Portrait from './Portrait.js';
-import Name from './Name.js';
-import Share from "./Share.js";
+import React from 'react'
+import SocialLink from './SocialLink'
+import OfficeList from './OfficeList'
+import Portrait from './Portrait.js'
+import Name from './Name.js'
+import Share from "./Share.js"
+
 // Card component
 export default class Card extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
       animation: "",
       "hidden": "hidden-opacity"
-    };
+    }
   }
 
   componentWillMount() {
-    var el = this;
-    setTimeout(function() {
-      el.startAnimation();
-    }, this.props.wait);
+    setTimeout(() => {
+      this.startAnimation()
+    }, this.props.wait)
   }
 
   startAnimation() {
-    this.setState({animation: "card-animation-start", "hidden": ""});
+    this.setState({animation: "card-animation-start", "hidden": ""})
   }
 
   render() {
-    var contact = this.props.contacts;
-    var partyInitial = this.props.contact.party.charAt(0);
-    function party(partyInitial) {
-      if (partyInitial != "R" && partyInitial != "D") {
-        return "I"
-      } else {
-        return partyInitial
-      }
-    };
-    var url = "http://www.phoneyourrep.com?reps=" + this.props.contact.official_id;
+    const contact = this.props.contact
+    const partyInitial = contact.party.charAt(0) != "R" && contact.party.charAt(0) != "D" ? "I" : contact.party.charAt(0)
+    const shareUrl = "http://www.phoneyourrep.com?reps=" + contact.official_id
 
     return (
       <div className={"col-12 center " + this.state.animation + " " + this.state.hidden}>
         <div className="card row">
           <div className="col-4">
-            <Portrait link={this.props.contact.photo}></Portrait>
+            <Portrait link={contact.photo} />
             <div className="card-social">
-              <SocialLink type="web" link={this.props.contact.url}/>
-              <SocialLink type="youtube" link={this.props.contact.youtube}/>
-              <SocialLink type="twitter" link={this.props.contact.twitter}/>
-              <SocialLink type="facebook" link={this.props.contact.facebook}/>
-              <SocialLink type="instagram" link={this.props.contact.instagram}/>
-              <SocialLink type="google-plus" link={this.props.contact.googleplus}/>
+              <SocialLink type="web" link={contact.url} />
+              <SocialLink type="youtube" link={contact.youtube} />
+              <SocialLink type="twitter" link={contact.twitter} />
+              <SocialLink type="facebook" link={contact.facebook} />
+              <SocialLink type="instagram" link={contact.instagram} />
+              <SocialLink type="google-plus" link={contact.googleplus} />
             </div>
-            <Share url={url} />
+            <Share url={shareUrl} />
           </div>
           <div className="col-8">
-            <Name party={party(partyInitial)} name={this.props.contact.official_full} chamber={this.props.contact.role}></Name>
-            <OfficeList offices={this.props.contact.office_locations} ></OfficeList>
+            <Name partyInitial={partyInitial} name={contact.official_full} chamber={contact.role} />
+            <OfficeList offices={contact.office_locations} />
           </div>
         </div>
       </div>
-    );
+    )
   }
-};
+}

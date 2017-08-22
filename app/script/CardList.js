@@ -1,7 +1,8 @@
-import React from 'react';
-import Card from './CardList/Card';
-import createHistory from 'history/createBrowserHistory';
-const history = createHistory();
+import React from 'react'
+import Card from './CardList/Card'
+import createHistory from 'history/createBrowserHistory'
+
+const history = createHistory()
 
 export default class CardList extends React.Component {
   render() {
@@ -9,9 +10,9 @@ export default class CardList extends React.Component {
       search: "?reps=" + this.props.data.reps.map((rep) => {
         return rep.official_id
       }).join()
-    });
+    })
 
-    var cards = this.props.data.reps.map((contact,i ) => {
+    const cards = this.props.data.reps.map((contact,i ) => {
       return (
         <Card
           key={i}
@@ -19,13 +20,13 @@ export default class CardList extends React.Component {
           contact={contact}
           cardId={i}
         />
-      );
-    });
+      )
+    })
 
     return (
       <div className="row card-list">
         {cards}
       </div>
-    );
+    )
   }
 }

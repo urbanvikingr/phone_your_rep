@@ -1,25 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Select from 'react-select';
-import CardList from './CardList';
-import Directory from './Directory';
-import queryString from 'query-string';
-import $ from 'jquery';
-import { apiUrl } from './apiUrl';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Select from 'react-select'
+import CardList from './CardList'
+import Directory from './Directory'
+import queryString from 'query-string'
+import $ from 'jquery'
+import { apiUrl } from './apiUrl'
 
-import 'imports?jQuery=jquery!geocomplete';
-import '../styles';
-import '../styles/main.css';
+import 'imports?jQuery=jquery!geocomplete'
+import '../styles'
+import '../styles/main.css'
 
-const parsedQueryString = queryString.parse(location.search);
+const parsedQueryString = queryString.parse(location.search)
 
 if (parsedQueryString.reps) {
-  var repIds = parsedQueryString.reps
-  var url = `${apiUrl}reps?official_ids=${repIds}`;
+  const repIds = parsedQueryString.reps
+  const url = `${apiUrl}reps?official_ids=${repIds}`
   getURL(url)
 }
 
-document.getElementById("submit").addEventListener("click", submit);
+document.getElementById("submit").addEventListener("click", submit)
 
 ReactDOM.render(
   <Directory reps={[]} getURL={getURL}/>,
@@ -27,36 +27,36 @@ ReactDOM.render(
 )
 
 function submit() {
-  var lat = document.getElementById('lat').value;
-  var lng = document.getElementById('lng').value;
-  var url = `${apiUrl}reps?&lat=${lat}&long=${lng}`;
-  getURL(url);
+  const lat = document.getElementById('lat').value
+  const lng = document.getElementById('lng').value
+  const url = `${apiUrl}reps?&lat=${lat}&long=${lng}`
+  getURL(url)
 }
 
 function getURL(url) {
-  var request = new XMLHttpRequest();
-  var container = document.getElementById('root');
-  container.innerHTML = "";
-  request.open("GET", url);
-  request.addEventListener("load", onLoad);
-  request.addEventListener("error", onError);
-  request.send();
+  const request = new XMLHttpRequest()
+  const container = document.getElementById('root')
+  container.innerHTML = ""
+  request.open("GET", url)
+  request.addEventListener("load", onLoad)
+  request.addEventListener("error", onError)
+  request.send()
 }
 
 function onLoad() {
-  console.log("Success :)");
-  var apiData = JSON.parse(this.response);
+  console.log("Success :)")
+  const apiData = JSON.parse(this.response)
 
   // Render Card List!
   ReactDOM.render(
     <CardList data={apiData}/>, document.getElementById('root')
-  );
+  )
 }
 
 function onError() {
-  console.log("Failure :(");
+  console.log("Failure :(")
 }
 
 $(function() {
-  $("#address").geocomplete({details: "form"});
-});
+  $("#address").geocomplete({details: "form"})
+})

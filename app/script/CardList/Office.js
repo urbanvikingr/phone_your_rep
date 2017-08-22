@@ -1,29 +1,29 @@
-import React from 'react';
-import ReactTooltip from 'react-tooltip';
+import React from 'react'
+import ReactTooltip from 'react-tooltip'
 
 export default function Office(props) {
-  var office = (props.office.city ? props.office.city : props.office.office_type);
-  var tel_link = "tel:" + props.office.phone;
-  var address = (props.office.address ? props.office.address : "" );
-  var suite = (props.office.suite ? props.office.suite : "")
-  var cityStateZip = (props.office.city ? props.office.city + ", " : "") + (props.office.state ? props.office.state + ", " : "") + (props.office.zip ? props.office.zip : "");
-  var building = (props.office.building ? props.office.building + ", " : "");
-  var hours = (props.office.hours ? "Hours: " + props.office.hours : "Hours?: Let us know on Twitter @phoneyourrep");
-
-  var togglePanel = props.togglePanel;
-  var officeId = props.officeId;
-  var isHidden = (props.toggleOfficeId == officeId) ? "" : "hidden";
-  var caret = (props.toggleOfficeId == officeId) ? "fa fa-minus fa-white card-office-btn-caret" :  "fa fa-plus fa-white card-office-btn-caret"
+  const office = props.office
+  const officeTitle = (office.city ? office.city : office.office_type)
+  const phone = office.phone
+  const address = (office.address ? office.address : "" )
+  const suite = (office.suite ? office.suite : "")
+  const cityStateZip = (office.city ? office.city + ", " : "") + (office.state ? office.state + ", " : "") + (office.zip ? office.zip : "")
+  const building = (office.building ? office.building + ", " : "")
+  const hours = (office.hours ? "Hours: " + office.hours : "Hours?: Let us know on Twitter @phoneyourrep")
+  const togglePanel = props.togglePanel
+  const officeId = props.officeId
+  const isHidden = (props.toggleOfficeId == officeId) ? "" : "hidden"
+  const caret = (props.toggleOfficeId == officeId) ? "fa fa-minus fa-white card-office-btn-caret" :  "fa fa-plus fa-white card-office-btn-caret"
 
   return (
     <div className="card-office">
-      <div className="card-office-btn" onClick={function(e){ togglePanel(officeId); }}>
+      <div className="card-office-btn" onClick={e => togglePanel(officeId)}>
         <div className="card-office-btn-office">
           <i className={caret} aria-hidden="true"></i>
-          <h1 className="card-office-btn-name font-white">{office}</h1>
+          <h1 className="card-office-btn-name font-white">{officeTitle}</h1>
         </div>
 
-        <a className="font-white" href={props.office.v_card_link}>
+        <a className="font-white" href={office.v_card_link}>
           <div className="card-office-btn-link" data-tip="Add to Contact List">
             <i className="fa fa-download fa-white" aria-hidden="true"></i>
           </div>
@@ -38,7 +38,7 @@ export default function Office(props) {
           <div className="col-6 card-office-panel-phone">
             <i className="fa fa-phone-square fa-icon fa-fw " aria-hidden="true"></i>
             <p>
-              <a href={tel_link}>{props.office.phone}</a>
+              <a href={"tel:" + phone}>{phone}</a>
             </p>
           </div>
 
@@ -59,4 +59,4 @@ export default function Office(props) {
       <div className="spacer"></div>
     </div>
   )
-};
+}

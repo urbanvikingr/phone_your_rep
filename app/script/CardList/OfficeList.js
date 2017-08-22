@@ -1,17 +1,17 @@
-import React from 'react';
-import Office from './Office';
+import React from 'react'
+import Office from './Office'
 
 export default class OfficeList extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       toggleOfficeId: null
     }
-    this.togglePanel = this.togglePanel.bind(this);
+    this.togglePanel = this.togglePanel.bind(this)
   }
 
   togglePanel(officeId) {
-    if (this.state.toggleOfficeId == officeId){
+    if (this.state.toggleOfficeId == officeId) {
       this.setState({toggleOfficeId: null})
     } else {
       this.setState({toggleOfficeId: officeId})
@@ -19,7 +19,7 @@ export default class OfficeList extends React.Component {
   }
 
   render() {
-    var offices = this.props.offices.map((office, i) => {
+    const offices = this.props.offices.map((office, i) => {
       return (
         <Office key={i}
           office={office}
@@ -31,4 +31,4 @@ export default class OfficeList extends React.Component {
     })
     return <div className="card-office-list">{offices}</div>
   }
-};
+}

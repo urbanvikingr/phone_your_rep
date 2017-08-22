@@ -1,11 +1,11 @@
-import React from 'react';
-import networkMap from './constants';
+import React from 'react'
+import networkMap from './constants'
 
 export default class SocialLink extends React.Component {
   render() {
     function _socialLink(link, network) {
-      var classes = 'fa fa-icon ' + network.className
-      var url = network.baseUrl + link
+      const classes = 'fa fa-icon ' + network.className
+      const url = network.baseUrl + link
       return (
         <a className="card-link" href={url} target="_blank">
           <i className={classes} aria-hidden="true"></i>

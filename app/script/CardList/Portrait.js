@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 export default class Portrait extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       link : ""
     }
@@ -13,9 +13,9 @@ export default class Portrait extends React.Component {
   }
 
   testImage(URL) {
-    var test = new Image();
-    test.onload = this.imageFound.bind(this);
-    test.onerror = this.imageNotFound.bind(this);
+    const test = new Image()
+    test.onload = this.imageFound.bind(this)
+    test.onerror = this.imageNotFound.bind(this)
     test.src = URL
   }
 
@@ -30,4 +30,4 @@ export default class Portrait extends React.Component {
   render() {
     return (<img className="card-photo" src={this.state.link}/>)
   }
-};
+}

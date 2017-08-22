@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import DirectoryInput from './Directory/DirectoryInput'
 import DirectoryList from './Directory/DirectoryList'
 import { apiUrl } from './apiUrl'
 
 export default class Directory extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       search: "",
       reps: props.reps,
@@ -15,18 +15,18 @@ export default class Directory extends React.Component {
   }
 
   componentWillMount() {
-    var request = new XMLHttpRequest();
-    var url = `${apiUrl}reps/ids?level=national`;
-    request.open("GET", url);
+    const request = new XMLHttpRequest()
+    const url = `${apiUrl}reps/ids?level=national`
+    request.open("GET", url)
     request.addEventListener("load", () => {
-      var reps = JSON.parse(request.response);
+      const reps = JSON.parse(request.response)
       this.setState({ reps: reps })
-    });
-    request.send();
+    })
+    request.send()
   }
 
   updateSearch(event) {
-    let value = event.target.value
+    const value = event.target.value
     this.setState({
       search: value,
       focus: (value === "" ? false : true)
@@ -42,11 +42,11 @@ export default class Directory extends React.Component {
   }
 
   render() {
-    let filteredContacts = this.state.reps.filter((contact) => {
+    const filteredContacts = this.state.reps.filter((contact) => {
       return contact.official_full.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
     })
-    let hidden = this.state.focus ? "" : "hidden"
-    let queryString = this.state.selected && !this.state.focus ? `reps?official_ids=${this.state.selected.official_id}` : "javascript:void(0)"
+    const hidden = this.state.focus ? "" : "hidden"
+    const queryString = this.state.selected && !this.state.focus ? `reps?official_ids=${this.state.selected.official_id}` : "javascript:void(0)"
 
     return (
       <div className="directory">
@@ -71,6 +71,6 @@ export default class Directory extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }	
-};
+}

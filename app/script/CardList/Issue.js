@@ -1,5 +1,5 @@
-import React from 'react';
-import networkMap from './constants';
+import React from 'react'
+import networkMap from './constants'
 
 export default function Issue(props) {
   return (
