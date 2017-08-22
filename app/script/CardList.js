@@ -1,10 +1,10 @@
 import React from 'react';
-import Card from './Card';
+import Card from './CardList/Card';
 import createHistory from 'history/createBrowserHistory';
 const history = createHistory();
 
 export default class CardList extends React.Component {
-	render() {
+  render() {
     history.push({
       search: "?reps=" + this.props.data.reps.map((rep) => {
         return rep.official_id
@@ -12,20 +12,20 @@ export default class CardList extends React.Component {
     });
 
     var cards = this.props.data.reps.map((contact,i ) => {
-			return (
-				<Card
-				key={i}
-				wait={250*i}
-				contact={contact}
-				cardId={i}
-				/>
-			);
-		});
+      return (
+        <Card
+          key={i}
+          wait={250*i}
+          contact={contact}
+          cardId={i}
+        />
+      );
+    });
 
-		return (
-			<div className="row card-list">
-				{cards}
-			</div>
-		);
-	}
+    return (
+      <div className="row card-list">
+        {cards}
+      </div>
+    );
+  }
 }

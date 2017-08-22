@@ -2,67 +2,61 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Select from 'react-select';
 import CardList from './CardList';
-// import Directory from './Directory';
-
+import Directory from './Directory';
+import queryString from 'query-string';
 import $ from 'jquery';
+import { apiUrl } from './apiUrl';
+
 import 'imports?jQuery=jquery!geocomplete';
-import './apiInfo';
 import '../styles';
 import '../styles/main.css';
-import queryString from 'query-string';
 
 const parsedQueryString = queryString.parse(location.search);
 
-var apiData;
-
 if (parsedQueryString.reps) {
-  var reps = parsedQueryString.reps
-  var url = `${apiUrl}reps?official_ids=${reps}`;
-
+  var repIds = parsedQueryString.reps
+  var url = `${apiUrl}reps?official_ids=${repIds}`;
   getURL(url)
 }
 
 document.getElementById("submit").addEventListener("click", submit);
 
-// ReactDOM.render(
-//     <Directory reps={Reps} />,
-// 	document.getElementById("directory")
-// )
-
-
+ReactDOM.render(
+  <Directory reps={[]} getURL={getURL}/>,
+  document.getElementById("directory")
+)
 
 function submit() {
-
-    var lat = document.getElementById('lat').value;
-    var lng = document.getElementById('lng').value;
-    var url = `${apiUrl}reps?&lat=${lat}&long=${lng}`;
-
-    getURL(url);
+  var lat = document.getElementById('lat').value;
+  var lng = document.getElementById('lng').value;
+  var url = `${apiUrl}reps?&lat=${lat}&long=${lng}`;
+  getURL(url);
 }
 
 function getURL(url) {
-    var request = new XMLHttpRequest();
-    var container = document.getElementById('root');
-    container.innerHTML = "";
-    request.open("GET", url);
-    request.addEventListener("load", onLoad);
-    request.addEventListener("error", onError);
-    request.send();
+  var request = new XMLHttpRequest();
+  var container = document.getElementById('root');
+  container.innerHTML = "";
+  request.open("GET", url);
+  request.addEventListener("load", onLoad);
+  request.addEventListener("error", onError);
+  request.send();
 }
 
 function onLoad() {
-    console.log("Success :)");
-    apiData = JSON.parse(this.response);
+  console.log("Success :)");
+  var apiData = JSON.parse(this.response);
 
-    // Render Card List!
-    ReactDOM.render(
-        <CardList data={apiData}/>, document.getElementById('root'));
-
+  // Render Card List!
+  ReactDOM.render(
+    <CardList data={apiData}/>, document.getElementById('root')
+  );
 }
+
 function onError() {
-    console.log("Failure :(");
+  console.log("Failure :(");
 }
 
 $(function() {
-    $("#address").geocomplete({details: "form"});
+  $("#address").geocomplete({details: "form"});
 });
