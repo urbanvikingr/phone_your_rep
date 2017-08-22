@@ -7,7 +7,7 @@ export default function DirectoryInput(props) {
       type="text"
       id="address"
       className="form-input directory-input"
-      placeholder="Congressmember's Name"
+      placeholder="Enter name"
       value={props.value}
       onChange={props.onChange}
       onFocus={props.onFocus}
