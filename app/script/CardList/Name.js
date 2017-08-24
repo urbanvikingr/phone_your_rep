@@ -6,8 +6,8 @@ export default function SocialLink(props) {
       <h3 className="card-member">
         {props.name}
       </h3>
-      <p className="card-chamber">
-        {props.chamber}
+      <p className="card-role">
+        {props.role} - {props.state}
       </p>
       <img className="card-party" src={require('../../images/' + props.partyInitial.toLowerCase() + '.png')}></img>
     </div>

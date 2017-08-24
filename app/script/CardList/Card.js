@@ -46,7 +46,7 @@ export default class Card extends React.Component {
             <Share url={shareUrl} />
           </div>
           <div className="col-8">
-            <Name partyInitial={partyInitial} name={contact.official_full} chamber={contact.role} />
+            <Name partyInitial={partyInitial} name={contact.official_full} role={contact.role} state={contact.state.name} />
             <OfficeList offices={contact.office_locations} />
           </div>
         </div>
