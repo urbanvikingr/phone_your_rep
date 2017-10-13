@@ -16,12 +16,13 @@ Recommended node version 6.9.1
 ### Project Overview
 
 ### Running
+Run these commands:
 ```
 npm i
 npm run build
 npm run dev
 ```
-Open localhost:8080
+Open the app in the bowser at localhost:8080.
 
 ### Notes
 - Recommended node version 6.9.1
