@@ -88,11 +88,9 @@ export default class ReportIssue extends React.Component {
                 <div className="modal-body">
                   <p>Which information is wrong?</p>
                   {
-                    this.state.issues.map((issue,i) => {
-                      return(
+                    this.state.issues.map((issue,i) => (
                         <Issue key={i} issue={issue} handleChange={this.handleChange}/>
-                      )
-                    })
+                      ))
                   }
                   <div className="modal-footer">
                     <div id={'recaptcha' + this.props.officeCardId}></div>

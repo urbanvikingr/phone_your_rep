@@ -21,6 +21,7 @@ npm i
 npm run build
 npm run dev
 ```
+Open localhost:8080
 
 ### Notes
 - Recommended node version 6.9.1

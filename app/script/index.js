@@ -44,7 +44,7 @@ function getURL(url) {
 }
 
 function onLoad() {
-  console.log("Success :)")
+  console.log("Success2 :)")
   const apiData = JSON.parse(this.response)
 
   // Render Card List!

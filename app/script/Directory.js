@@ -14,7 +14,7 @@ export default class Directory extends React.Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const request = new XMLHttpRequest()
     const url = `${apiUrl}reps/ids?level=national`
     request.open("GET", url)
